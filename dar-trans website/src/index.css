@@ -56,7 +56,7 @@ header
   padding: 1vh;
   padding-left: 5vh;
   padding-right: 5vh;
-  height: 12vh;
+  height: 8vh;
   width: 85%;
   margin-top: 2vh;
   margin-bottom: 2vh;
@@ -71,9 +71,12 @@ header
   justify-content: space-between ;
   top: 0;
 }
+header .pnag { font-size: 2vh;}
+header .text { font-size: 1.5vh;}
 header img
 {
-  height: 10vh;
+  transform: translateY(1vh);
+  height: 6vh;
 }
 .flex
 {
@@ -92,7 +95,7 @@ header ul{
   list-style: none;
 }
 header li{
-  font-size: 2vh;
+  font-size: 1.5vh;
   font-weight: bold;
   padding-bottom: 1vh;
   padding-top: 0.8vh;
@@ -111,7 +114,6 @@ header li:hover{
 .picon
 {
   height: 3vh;
-  transform: translateY(1vh);
 }
 .picon {
   animation: ring 3s infinite;
@@ -119,34 +121,33 @@ header li:hover{
 }
 
 @keyframes ring {
-  0%   { transform:translateY(1vh) rotate(0deg); }
-  5%   { transform:translateY(1vh) rotate(-15deg); }
-  10%  { transform:translateY(1vh) rotate(15deg); }
-  15%  { transform:translateY(1vh) rotate(-12deg); }
-  20%  { transform:translateY(1vh) rotate(12deg); }
-  25%  { transform:translateY(1vh) rotate(-8deg); }
-  30%  { transform:translateY(1vh) rotate(8deg); }
-  35%  { transform:translateY(1vh) rotate(0deg); }
-  100% { transform:translateY(1vh) rotate(0deg); }
+  0%   { transform:translateY(0.5vh) rotate(0deg); }
+  5%   { transform:translateY(0.5vh) rotate(-15deg); }
+  10%  { transform:translateY(0.5vh) rotate(15deg); }
+  15%  { transform:translateY(0.5vh) rotate(-12deg); }
+  20%  { transform:translateY(0.5vh) rotate(12deg); }
+  25%  { transform:translateY(0.5vh) rotate(-8deg); }
+  30%  { transform:translateY(0.5vh) rotate(8deg); }
+  35%  { transform:translateY(0.5vh) rotate(0deg); }
+  100% { transform:translateY(0.5vh) rotate(0deg); }
 }
-.kontakt
-{
-  display: flex;
-}
+.kontakt { display: flex; }
 .kontakta { transition: 200ms; border-radius: 2vh; padding: 0.4vh 1.5vh;}
 .kontakta:hover
 {
   box-shadow: 0vh 0vh 3vh  rgba(0, 0, 0, 0.257);
   transform: scale(1.1);
 }
+.kontakt .btext { font-size: 1.5vh;}
 .main-onas
 {
   border-radius: 2vh;
   box-shadow: 0vh 0vh 3vh  rgba(0, 0, 0, 0.115);
   background-color: white;
-  margin: 0vh 14vh;
+  margin-left: 10vh;
+  margin-right: 10vh;
   margin-top: 18vh;
-  width: 180vh;
+  width: auto;
   height: 100vh;
 }
 footer
@@ -166,15 +167,15 @@ footer
 }
 footer img
 {
-  transform: translateY(0.5vh);
   height: 4vh;
 }
+footer .btext { font-size: 1.5vh;}
 .zkad
 {
   display: flex;
 }
 .zkad .mintext{
-  transform: translateX(-20vh) translateY(-2vh);
+  transform: translateX(-17vh) translateY(-2vh);
 }
 .emailfoot
 {
@@ -182,7 +183,7 @@ footer img
 }
 .emailfoot img 
 {
-  height: 3vh; transform: translateY(1vh);
+  height: 3vh; transform: translateY(0.5vh);
 }
 .polpryw
 {
