@@ -3,7 +3,9 @@ function Maindt (){
         <>
         <center>
             <main className="main-onas">
-                siema
+                
+                <p className="nag">Strona jest w trakcie pisania!</p>
+                
                 
             </main>
         </center>

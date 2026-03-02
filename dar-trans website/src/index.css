@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(0, 0, 0, 0.87);
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(239, 239, 239);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -51,6 +51,7 @@ button:focus-visible {
 }
 header
 {
+  box-shadow: 0vh 0vh 3vh  rgba(0, 0, 0, 0.158);
   display: flex;
   padding: 1vh;
   padding-left: 5vh;
@@ -60,7 +61,7 @@ header
   margin-top: 2vh;
   margin-bottom: 2vh;
   border-radius: 4vh;
-  background-color: #ffffff78;
+  background-color: #ffffffb4;
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   position: fixed;
@@ -84,6 +85,8 @@ header img
 .pnag { font-size: 3vh; font-weight: bold;margin: 1vh;text-align: left;}
 .text { font-size: 2vh; margin: 1vh;}
 .btext { font-size: 2vh;font-weight: bold; margin: 1vh;}
+.mintext { font-size: 1vh;font-weight: bold; margin: 0.5vh; color: gray;}
+.midtext { font-size: 1.5vh;font-weight: bold; margin: 0.5vh; color: gray;}
 
 header ul{
   list-style: none;
@@ -145,4 +148,43 @@ header li:hover{
   margin-top: 18vh;
   width: 180vh;
   height: 100vh;
+}
+footer
+{
+  padding: 1vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  display: flex;
+  margin-top: 5vh;
+  background-color: white;
+  box-shadow: 0vh 0vh 3vh  rgba(0, 0, 0, 0.115);
+  height: 9vh;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+
+}
+footer img
+{
+  transform: translateY(0.5vh);
+  height: 4vh;
+}
+.zkad
+{
+  display: flex;
+}
+.zkad .mintext{
+  transform: translateX(-20vh) translateY(-2vh);
+}
+.emailfoot
+{
+  display: flex;
+}
+.emailfoot img 
+{
+  height: 3vh; transform: translateY(1vh);
+}
+.polpryw
+{
+  text-decoration: underline;
 }
