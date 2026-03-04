@@ -56,7 +56,7 @@ header
   padding: 1vh;
   padding-left: 5vh;
   padding-right: 5vh;
-  height: 8vh;
+  height: 6vh;
   width: 85%;
   margin-top: 2vh;
   margin-bottom: 2vh;
@@ -103,7 +103,7 @@ header li{
   padding-right: 2.3vh;
   transition: 200ms;
   border-radius: 2vh;
-  height: 4vh;
+  height: 3vh;
   align-content: center;
 }
 header li:hover{
@@ -146,7 +146,7 @@ header li:hover{
   background-color: white;
   margin-left: 10vh;
   margin-right: 10vh;
-  margin-top: 18vh;
+  margin-top: 12vh;
   width: auto;
   height: 100vh;
 }
@@ -159,7 +159,7 @@ footer
   margin-top: 5vh;
   background-color: white;
   box-shadow: 0vh 0vh 3vh  rgba(0, 0, 0, 0.115);
-  height: 9vh;
+  height: 6vh;
   align-items: center;
   justify-content: space-between;
   align-content: center;
