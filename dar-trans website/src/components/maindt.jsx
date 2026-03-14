@@ -12,6 +12,7 @@ function Maindt (){
     return(
         <>
         <center>
+            <br id="onas"/>
             <main className="main-onas">
                 <div className="onas-glowna">
                     <div className="lewo">
@@ -42,6 +43,7 @@ function Maindt (){
                         <img src={polska} alt="zdjpolski" />
                     </div>
                 </div>
+                <br id="flota"/>
                 <div className="flota">
                     <p className="pnag">Nasza Flota :</p>
                     <hr className="flota-linia"/>
@@ -98,13 +100,22 @@ function Maindt (){
                     </div>
 
                 </div>
+                <br id="oferta"/>\
+                <div className="oferta">
+                    <p className="pnag">Nasza Oferta : </p>
+                    <hr className="kontakt-linia"/>
+                    <br />
+
+                </div>
+                <br id="kontakt"/>
                 <div className="kontakt-div">
                     <p className="pnag">Kontakt </p>
                     <hr className="kontakt-linia"/>
-                    <br />
+                    <br /><br />
+                    <p className="pnagc">Zakład Usług Transportowych DAR – TRANS</p>
+                    <br /><br />
                     <div className="kontakt-in">
-                        <p className="pnagc">Zakład Usług Transportowych DAR – TRANS</p>
-                        <br />
+                        
                         <div className="profil">
                             <img src={manicon} alt="manicon" />
                             <div className="profil-lewo">
@@ -117,8 +128,9 @@ function Maindt (){
                                 <p className="text">57-250 Złoty Stok</p>
                                 <p className="text">tel. +48 604-190-948</p>
                             </div>
-
                         </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.48641531305!2d16.8394131!3d50.450666299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470e1f5486d99e15%3A0x96b773556315c8c!2sZak%C5%82ad%20Us%C5%82ug%20Transportowych%20DAR-TRANS%20Dariusz%20Dukiewicz!5e0!3m2!1spl!2spl!4v1773505207678!5m2!1spl!2spl" 
+                           className="mapa" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </main>

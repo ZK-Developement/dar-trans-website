@@ -17,12 +17,14 @@ function Header ()
                 </div>
                 </a>
                 <div>
+                    <nav>
                     <ul className="flex">
-                        <a href="#"><li>O Nas</li></a>
-                        <a href="#"><li>Flota</li></a>
-                        <a href="#"><li>Oferta</li></a>
-                        <a href="#"><li>Kontakt</li></a>
+                        <a href="#onas"><li>O Nas</li></a>
+                        <a href="#flota"><li>Flota</li></a>
+                        <a href="#oferta"><li>Oferta</li></a>
+                        <a href="#kontakt"><li>Kontakt</li></a>
                     </ul>
+                    </nav>
                 </div>
                 <a href="#" className="kontakta">
                 <div className="kontakt">

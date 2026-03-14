@@ -12,6 +12,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+html {
+  scroll-behavior: smooth;
+}
 a{
   color: black;
   text-decoration: none;
@@ -112,6 +115,10 @@ header li:hover{
   box-shadow: 0vh 0vh 3vh  rgba(0, 0, 0, 0.257);
   transform: scale(1.05)translateY(-0.5vh);
 }
+header li:active{
+  box-shadow: 0vh 0vh 3vh  rgba(0, 0, 0, 0.257);
+  transform: scale(0.93)translateY(0.5vh);
+}
 
 .picon
 {
@@ -188,7 +195,7 @@ footer .btext { font-size: 1.5vh;}
   background-color: white;
   margin-left: 10vh;
   margin-right: 10vh;
-  margin-top: 12vh;
+  margin-top: 10vh;
   width: auto;
   height: auto;
 }
@@ -290,6 +297,12 @@ footer .btext { font-size: 1.5vh;}
   transform: scale(0.98) translateY(0.5vh);
   box-shadow: 0vh 0vh 2vh  rgba(0, 0, 0, 0);
 }
+.oferta
+{
+  padding: 5vh;
+  width: 100%;
+  height: 60vh;
+}
 .kontakt-div
 {
   padding: 5vh;
@@ -299,12 +312,13 @@ footer .btext { font-size: 1.5vh;}
 .kontakt-linia { width: 23vh; float: left; margin-left: 1.5vh; margin-bottom: 0vh;}
 .kontakt-in
 {
-  
+  gap: 5vh;
+  display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
-  background-color: rgba(255, 255, 255, 0);
-  width: 120vh;
+  background-color: rgba(255, 0, 0, 0);
+  width: 180vh;
 }
 .profil
 {
@@ -335,6 +349,12 @@ footer .btext { font-size: 1.5vh;}
   width: 0.1vh;
   height: 15vh;
   background-color: rgba(90, 90, 90, 0.521);
+}
+.mapa
+{
+  width: 60vh;
+  height: 30vh;
+  border: none;
 }
 
 
