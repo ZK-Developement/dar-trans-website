@@ -8,6 +8,8 @@ import noge from "../assets/images/noge.png"
 import vanhool from "../assets/images/vanhool.png"
 import domino from "../assets/images/domino.png"
 import manicon from "../assets/images/manicon.png"
+import bazafirm from "../assets/images/bazafirm.gif"
+import medal from "../assets/images/medal.png"
 function Maindt (){
     return(
         <>
@@ -30,7 +32,32 @@ function Maindt (){
                         <img src={autokar1} alt="autokar" />
                     </div>
                 </div>
-            
+                <div className="onas-dol">
+                    <p className="pnag">O nas</p>
+                    <hr className="onas-dol-dol-linia"/>
+                    <br />
+                    <div className="onas-dol-dol">
+                        <div className="lewo">
+                            <p className="text"><b>Zakład Usług transportowych Dar-Trans Dariusz Dukiewicz </b> powstał w 1997 roku z inicjatywy zawodowego kierowcy Dariusza Dukiewicza.</p>
+                            <p className="text">Jesteśmy małą firmą zajmującą się transportem osobowym już od <b>ponad 20 lat.</b></p>
+                            <br />
+                            <p className="btext">Oferujemy konkurencyjne ceny, wysoką jakość usług oraz przed wszystkim dbamy o bezpieczeństwo naszych pasażerów.</p>
+                            <br />
+                            <p className="text">Do każdego klienta podchodzimy indywidualnie, co sprawia, że idealnie dostosujemy się do waszych potrzeb.</p>
+                        </div >
+                        <div className="prawo">
+                            <center>
+                                <a href="https://www.baza-firm.com.pl/komunikacja-transport-pasa%C5%BCerski/z%C5%82oty-stok/dar-trans-zak%C5%82ad-us%C5%82ug-transportowych-dariusz-dukiewicz/pl/194387.html">
+                                <img src={bazafirm} alt="medale"  className="baza"/></a>
+                                <br />
+                                <a href="https://www.firmagodnazaufania.pl/company,44443,zaklad-uslug-transportowych-dar-trans-dariusz-dukiewicz">
+                                <img src={medal} alt="medale" className="medale"/>
+                                </a>
+                            </center>
+                        </div>
+                        
+                    </div>
+                </div>
                 <div className="onas-dol">
                     <p className="pnag">Przewozy na terenie całej Polski</p>
                     <hr className="onas-dol-linia"/>
@@ -40,7 +67,7 @@ function Maindt (){
                             <p className="text">W ofercie posiadamy zarówno duże autokary turystyczne 55-cio osobowe jak i mniejsze 35-cio, 20-sto osobowe jak i busy 8-mio osobowe. Nasze samochody są klimatyzowane i wygodne, posiadają pakowne luki bagażowe, ale najważniejsze, że zawsze bezpiecznie dowiozą was tam, i z powrotem.</p>
                             <p className="text">Każdy klient rozliczany jest indywidualnie, przy dłuższej współpracy proponujemy atrakcyjne warunki. </p>
                         </div >
-                        <img src={polska} alt="zdjpolski" />
+                        <img src={polska} alt="zdjpolski" className="polska" />
                     </div>
                 </div>
                 <br id="flota"/>
@@ -100,12 +127,17 @@ function Maindt (){
                     </div>
 
                 </div>
-                <br id="oferta"/>\
+                <br id="oferta"/>
                 <div className="oferta">
                     <p className="pnag">Nasza Oferta : </p>
                     <hr className="kontakt-linia"/>
                     <br />
-
+                    <div className="oferta-dol">
+                        <br />
+                        <p className="textl">Zajmujemy się kompleksową obsługą grup wycieczkowych, szkolnych, kolonijnych, wczasowych. Jesteśmy w stanie elastycznie dostosować się do potrzeb klienta, a ze względu na szeroką game różnych pojazdów także do wielkości grupy. Samochody wyposażone są w pojemne luki bagażowe i klimatyzacje co podnosi jakość podróżowania.</p>
+                        <br /><hr  className="oferta-linia"/><br />
+                        <p className="textl">Planujesz wesele? A może firmowy wyjazd? Czy możne chcesz pojechać na imprezę z grupą przyjaciół? Dla naszych klientów mamy specjalne oferty na obsługę transportu także w nocy, wedle potrzeb i fantazji. Oferujemy wynajem samochodu z szoferem, który będzie do waszej dyspozycji nawet przez całą noc.</p>
+                    </div>
                 </div>
                 <br id="kontakt"/>
                 <div className="kontakt-div">
@@ -120,7 +152,7 @@ function Maindt (){
                             <img src={manicon} alt="manicon" />
                             <div className="profil-lewo">
                                 <p className="btext">Dariusz Dukiewicz</p>
-                                <p className="text"><a href="mailto:dariuszdukiewicz@wp.pl">dariuszdukiewicz@wp.pl</a></p>
+                                <p className="text"><a href="mailto:dariuszdukiewicz@wp.pl" className="emailhov">dariuszdukiewicz@wp.pl</a></p>
                             </div>
                             <hr className="profil-hr"></hr>
                             <div className="profil-lewo">

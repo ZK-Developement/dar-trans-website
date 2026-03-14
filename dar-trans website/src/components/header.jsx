@@ -26,7 +26,7 @@ function Header ()
                     </ul>
                     </nav>
                 </div>
-                <a href="#" className="kontakta">
+                <a href="#kontakt" className="kontakta">
                 <div className="kontakt">
                     <img src={picon} alt="phoneicon" className="picon" />
                     <p className="btext">Kontakt</p>

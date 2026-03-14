@@ -92,6 +92,7 @@ header img
 .pnag { font-size: 3vh; font-weight: bold;margin: 1vh;text-align: left;}
 .pnagc { font-size: 3vh; font-weight: bold;margin: 1vh;text-align: center;}
 .text { font-size: 2vh; margin: 1vh;}
+.textl { font-size: 2vh; margin: 1vh; text-align: left;}
 .btext { font-size: 2vh;font-weight: bold; margin: 1vh;}
 .mintext { font-size: 1vh;font-weight: bold; margin: 0.5vh; color: gray;}
 .midtext { font-size: 1.5vh;font-weight: bold; margin: 0.5vh; color: gray;}
@@ -232,8 +233,12 @@ footer .btext { font-size: 1.5vh;}
 .onas-firma img {height: 14vh;}
 .onas-dol-linia { width: 50vh; float: left; margin-left: 1.5vh; margin-bottom: 0vh;}
 .onas-dol-dol { display: flex; text-align: left; margin-top: 0vh; justify-content: space-between;}
-.onas-dol-dol img { height: 30vh; transform: scale(1.7) translateX(-10vh);}
+.onas-dol-dol .polska { height: 30vh; transform: scale(1.7) translateX(-10vh); transition: 200ms;}
+.onas-dol-dol .polska:hover { transform: scale(1.8) translateX(-9.5vh);}
 .onas-dol-dol .lewo{ width: 50%; padding: 5vh; align-content: center;}
+.onas-dol-dol .prawo { background-color: rgba(255, 0, 0, 0); width: 60vh; justify-content: center; align-content: center; align-items: center; justify-items: center;}
+.onas-dol-dol .prawo .medale { height: 15vh; }
+.onas-dol-dol .prawo .baza { height: 10vh; }
 .flota
 {
   padding: 5vh;
@@ -301,7 +306,7 @@ footer .btext { font-size: 1.5vh;}
 {
   padding: 5vh;
   width: 100%;
-  height: 60vh;
+  height: 40vh;
 }
 .kontakt-div
 {
@@ -312,6 +317,7 @@ footer .btext { font-size: 1.5vh;}
 .kontakt-linia { width: 23vh; float: left; margin-left: 1.5vh; margin-bottom: 0vh;}
 .kontakt-in
 {
+  transform: translateX(-5vh);
   gap: 5vh;
   display: flex;
   justify-content: center;
@@ -331,10 +337,16 @@ footer .btext { font-size: 1.5vh;}
   border-radius: 6vh;
   width: 90vh;
   height: 30vh;
+  transition: 200ms;
+}
+.profil:hover
+{
+  transform: scale(1.01);
+  box-shadow: 0vh 0vh 3vh  rgba(0, 0, 0, 0.109);
 }
 .profil img 
 {
-  height: 20vh;
+  height: 15vh;
 }
 .profil-lewo
 {
@@ -352,10 +364,23 @@ footer .btext { font-size: 1.5vh;}
 }
 .mapa
 {
+  border-radius: 6vh;
   width: 60vh;
   height: 30vh;
   border: none;
 }
-
+.emailhov:hover { text-decoration: underline;}
+.kontakt-div .pnagc { transform: translateX(-5vh);}
+.onas-dol-dol-linia { width: 15vh; float: left; margin-left: 1.5vh; margin-bottom: 0vh;}
+.oferta-dol
+{
+  width: 100vh;
+}
+.oferta-linia
+{
+  width: 98vh;
+}
+.flota-auto .lewo img{ transition: 400ms; }
+.flota-auto .lewo img:hover{ transform: scale(1.04); }
 
 
