@@ -82,7 +82,7 @@ function Maindt (){
                             <hr className="flota-auto-linia"/>
                             <br />
                             <p className="flota-mintext">Lorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritum</p>
-                            <button className="flota-btn">Kontakt</button>
+                            <a href="#kontakt"><button className="flota-btn">Kontakt</button></a>
                         </div>
                     </div>
                     <div className="flota-auto">
@@ -92,7 +92,7 @@ function Maindt (){
                             <hr className="flota-auto-linia"/>
                             <br />
                             <p className="flota-mintext">Lorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritum</p>
-                            <button className="flota-btn">Kontakt</button>
+                            <a href="#kontakt"><button className="flota-btn">Kontakt</button></a>
                         </div>
                     </div>
                     <div className="flota-auto">
@@ -102,7 +102,7 @@ function Maindt (){
                             <hr className="flota-auto-linia"/>
                             <br />
                             <p className="flota-mintext">Lorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritum</p>
-                            <button className="flota-btn">Kontakt</button>
+                            <a href="#kontakt"><button className="flota-btn">Kontakt</button></a>
                         </div>
                     </div>
                     <div className="flota-auto">
@@ -112,7 +112,7 @@ function Maindt (){
                             <hr className="flota-auto-linia"/>
                             <br />
                             <p className="flota-mintext">Lorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritum</p>
-                            <button className="flota-btn">Kontakt</button>
+                            <a href="#kontakt"><button className="flota-btn">Kontakt</button></a>
                         </div>
                     </div>
                     <div className="flota-auto">
@@ -122,7 +122,7 @@ function Maindt (){
                             <hr className="flota-auto-linia"/>
                             <br />
                             <p className="flota-mintext">Lorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritum</p>
-                            <button className="flota-btn">Kontakt</button>
+                            <a href="#kontakt"><button className="flota-btn">Kontakt</button></a>
                         </div>
                     </div>
 
