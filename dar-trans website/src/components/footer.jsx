@@ -8,7 +8,7 @@ function Footer (){
                     <a href="https://zk-dev-web.vercel.app/" target="_blank" rel="noopener noreferrer">
                     <div className="zkad">
                         <img src={zkicon} alt="zkicon" />
-                        <p className="btext">Developement</p>
+                        <p className="btext">Development</p>
                         <p className="mintext">WEBSITE MADE BY :</p>
                     </div>
                     </a>
