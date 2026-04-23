@@ -1,4 +1,4 @@
-import icon from "../assets/images/logo.png"
+import icon from "../assets/images/logodt.svg"
 import picon from "../assets/images/phoneicon.png"
 function Header ()
 {
@@ -19,10 +19,10 @@ function Header ()
                 <div>
                     <nav>
                     <ul className="flex">
-                        <a href="#onas"><li>O Nas</li></a>
-                        <a href="#flota"><li>Flota</li></a>
+                        <a href="#glowna"><li>Onas</li></a>
                         <a href="#oferta"><li>Oferta</li></a>
-                        <a href="#kontakt"><li>Kontakt</li></a>
+                        <a href="#flota"><li>Flota</li></a>
+                        <a href="#onas"><li>O Firmie</li></a>
                     </ul>
                     </nav>
                 </div>

@@ -86,8 +86,16 @@ header img
 {
   display: flex;
   gap: 3vh;
+  align-content: center;
+  justify-content: center;
+  margin-left: 3vh; 
 }
-
+.flex img
+{
+  transform: scale(1.8) translateY(0.5vh);
+  margin-right: 3vh; 
+}
+h1,h2,h3{font-weight: 500; font-size: 5vh; text-shadow: 0vh 0vh 0.2vh #ffffff;}
 .nag { font-size: 4vh; font-weight: bold;margin: 1vh; text-align: left;}
 .pnag { font-size: 3vh; font-weight: bold;margin: 1vh;text-align: left;}
 .pnagc { font-size: 3vh; font-weight: bold;margin: 1vh;text-align: center;}
@@ -101,8 +109,8 @@ header ul{
   list-style: none;
 }
 header li{
-  font-size: 1.5vh;
-  font-weight: bold;
+  font-size: 2vh;
+  font-weight: 500;
   padding-bottom: 1vh;
   padding-top: 0.8vh;
   padding-left: 2.3vh;
@@ -131,24 +139,24 @@ header li:active{
 }
 
 @keyframes ring {
-  0%   { transform:translateY(0.5vh) rotate(0deg); }
-  5%   { transform:translateY(0.5vh) rotate(-15deg); }
-  10%  { transform:translateY(0.5vh) rotate(15deg); }
-  15%  { transform:translateY(0.5vh) rotate(-12deg); }
-  20%  { transform:translateY(0.5vh) rotate(12deg); }
-  25%  { transform:translateY(0.5vh) rotate(-8deg); }
-  30%  { transform:translateY(0.5vh) rotate(8deg); }
-  35%  { transform:translateY(0.5vh) rotate(0deg); }
-  100% { transform:translateY(0.5vh) rotate(0deg); }
+  0%   { transform:translateY(1vh) rotate(0deg); }
+  5%   { transform:translateY(1vh) rotate(-15deg); }
+  10%  { transform:translateY(1vh) rotate(15deg); }
+  15%  { transform:translateY(1vh) rotate(-12deg); }
+  20%  { transform:translateY(1vh) rotate(12deg); }
+  25%  { transform:translateY(1vh) rotate(-8deg); }
+  30%  { transform:translateY(1vh) rotate(8deg); }
+  35%  { transform:translateY(1vh) rotate(0deg); }
+  100% { transform:translateY(1vh) rotate(0deg); }
 }
-.kontakt { display: flex; }
+.kontakt { display: flex;  height: 5vh; justify-content: center; align-content: center;}
 .kontakta { transition: 200ms; border-radius: 2vh; padding: 0.4vh 1.5vh;}
 .kontakta:hover
 {
   box-shadow: 0vh 0vh 3vh  rgba(0, 0, 0, 0.257);
-  transform: scale(1.1);
+  transform: scale(1.02) translateY(-0.5vh) ;
 }
-.kontakt .btext { font-size: 1.5vh;}
+.kontakt .btext { font-size: 2vh; font-weight: 500;}
 
 footer
 {
@@ -199,6 +207,7 @@ footer .btext { font-size: 1.5vh;}
   margin-top: 10vh;
   width: auto;
   height: auto;
+  
 }
 
 .onas-glowna
@@ -206,31 +215,29 @@ footer .btext { font-size: 1.5vh;}
   display: flex;
   width: 100%;
   height: 82vh;
-  
+  background: 
+  linear-gradient(rgba(255, 255, 255, 0.539),
+  rgb(255, 255, 255)),
+  url(/siedzenia.jpg) 
+  center center / cover no-repeat;
   border-radius: 2vh;
+  
 }
 .onas-glowna .lewo
 {
-  width: 60%;
+  width: 100%;
   justify-content: center;
   align-content: center;
   border-radius: 2vh;
 }
-.onas-glowna .prawo
-{
-  width: 40%;
-  border-radius: 2vh;
-  justify-content: center;
-  align-content: center;
-}
+
 .onas-dol
 {
   padding: 5vh;
 }
 .onas-glowna .prawo img { transform: scale(1.2) translateX(-6vh); transition: 200ms;}
-.onas-firma { justify-content: center; margin-bottom: 5vh;}
-.onas-firma img {height: 14vh;}
-.onas-firma img {height: 14vh;}
+.onas-firma { justify-content: center; margin-top: 5vh;}
+.onas-firma img {height: 24vh;transform: scale(2); margin: 0;}
 .onas-dol-linia { width: 50vh; float: left; margin-left: 1.5vh; margin-bottom: 0vh;}
 .onas-dol-dol { display: flex; text-align: left; margin-top: 0vh; justify-content: space-between;}
 .onas-dol-dol .polska { height: 30vh; transform: scale(1.7) translateX(-10vh); transition: 200ms;}
@@ -374,13 +381,27 @@ footer .btext { font-size: 1.5vh;}
 .onas-dol-dol-linia { width: 15vh; float: left; margin-left: 1.5vh; margin-bottom: 0vh;}
 .oferta-dol
 {
-  width: 100vh;
+  width: 110vh; 
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2vh;
 }
+.oferta-dol p { margin: 0;}
+.xdxd {transform:  translateY(-8vh);}
+.xdxd .text { font-size: 2.3vh;}
 .oferta-linia
 {
   width: 98vh;
+  margin: 0;
 }
 .flota-auto .lewo img{ transition: 400ms; }
 .flota-auto .lewo img:hover{ transform: scale(1.04); }
 
 
+.ofprawo
+
+{
+  width: 10vh;
+  height: 10vh;
+}

@@ -1,5 +1,5 @@
 import autokar1 from "../assets/images/autokar1.svg"
-import icon from "../assets/images/logo.png"
+import icon from "../assets/images/logodt.svg"
 import polska from "../assets/images/polska.svg"
 import coachph from "../assets/images/coachplaceholder.svg"
 import mercedes from "../assets/images/mercedes.png"
@@ -14,48 +14,32 @@ function Maindt (){
     return(
         <>
         <center>
-            <br id="onas"/>
+            <br  id="glowna"/>
             <main className="main-onas">
                 <div className="onas-glowna">
                     <div className="lewo">
                         <div className="onas-firma">
                             <img src={icon} alt="logofirmy" />
-                            <p className="mintext">Zakład Usług Transportowych Dar-Trans Dariusz Dukiewicz</p>
                         </div>
                         <div>
-                            <p className="text">Jesteśmy tu specjalnie <b>dla Ciebie.</b></p>
-                            <p className="text">Pomożemy Ci dotrzeć do celu,niezależnie od tego czy podróżujesz <b>sam</b> czy <b>dużą grupą.</b></p>
-                            <p className="btext">Zapraszamy do zapoznania się z naszą ofertą.</p>
+                            <h1 className="text">Jesteśmy tu specjalnie <b>dla Ciebie.</b></h1>
+                            <h2 className="text">Pomożemy Ci dotrzeć do celu,niezależnie od tego czy podróżujesz <b>sam</b> czy <b>dużą grupą.</b></h2>
+                            <h3 className="btext">Zapraszamy do zapoznania się z naszą ofertą.</h3>
                         </div>
-                    </div>
-                    <div className="prawo">
-                        <img src={autokar1} alt="autokar" />
                     </div>
                 </div>
-                <div className="onas-dol">
-                    <p className="pnag">O nas</p>
-                    <hr className="onas-dol-dol-linia"/>
+                <br id="oferta"/>
+                <div className="oferta">
                     <br />
-                    <div className="onas-dol-dol">
-                        <div className="lewo">
-                            <p className="text"><b>Zakład Usług transportowych Dar-Trans Dariusz Dukiewicz </b> powstał w 1997 roku z inicjatywy zawodowego kierowcy Dariusza Dukiewicza.</p>
-                            <p className="text">Jesteśmy małą firmą zajmującą się transportem osobowym już od <b>ponad 20 lat.</b></p>
+                    <div className="oferta-dol">
+                        <div className="xdxd">
                             <br />
-                            <p className="btext">Oferujemy konkurencyjne ceny, wysoką jakość usług oraz przed wszystkim dbamy o bezpieczeństwo naszych pasażerów.</p>
-                            <br />
-                            <p className="text">Do każdego klienta podchodzimy indywidualnie, co sprawia, że idealnie dostosujemy się do waszych potrzeb.</p>
-                        </div >
-                        <div className="prawo">
-                            <center>
-                                <a href="https://www.baza-firm.com.pl/komunikacja-transport-pasa%C5%BCerski/z%C5%82oty-stok/dar-trans-zak%C5%82ad-us%C5%82ug-transportowych-dariusz-dukiewicz/pl/194387.html">
-                                <img src={bazafirm} alt="medale"  className="baza"/></a>
-                                <br />
-                                <a href="https://www.firmagodnazaufania.pl/company,44443,zaklad-uslug-transportowych-dar-trans-dariusz-dukiewicz">
-                                <img src={medal} alt="medale" className="medale"/>
-                                </a>
-                            </center>
+                            <p className="text">Zajmujemy się kompleksową obsługą grup wycieczkowych, szkolnych, kolonijnych, wczasowych. Jesteśmy w stanie elastycznie dostosować się do potrzeb klienta, a ze względu na szeroką game różnych pojazdów także do wielkości grupy. Samochody wyposażone są w pojemne luki bagażowe i klimatyzacje co podnosi jakość podróżowania.</p>
+                            <br /><hr  className="oferta-linia"/><br />
+                            <p className="text">Planujesz wesele? A może firmowy wyjazd? Czy możne chcesz pojechać na imprezę z grupą przyjaciół? Dla naszych klientów mamy specjalne oferty na obsługę transportu także w nocy, wedle potrzeb i fantazji. Oferujemy wynajem samochodu z szoferem, który będzie do waszej dyspozycji nawet przez całą noc.</p>
                         </div>
-                        
+                        <div className="ofprawo">
+                        </div>
                     </div>
                 </div>
                 <div className="onas-dol">
@@ -70,6 +54,8 @@ function Maindt (){
                         <img src={polska} alt="zdjpolski" className="polska" />
                     </div>
                 </div>
+                
+                
                 <br id="flota"/>
                 <div className="flota">
                     <p className="pnag">Nasza Flota :</p>
@@ -106,16 +92,6 @@ function Maindt (){
                         </div>
                     </div>
                     <div className="flota-auto">
-                        <div className="lewo"> <img src={vanhool} alt="Zdjęcie autokaru" /></div>
-                        <div className="prawo">
-                            <p className="pnag">VanHool T916 <span className="categorytext"> 59 Miejsc</span></p>
-                            <hr className="flota-auto-linia"/>
-                            <br />
-                            <p className="flota-mintext">Lorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritum</p>
-                            <a href="#kontakt"><button className="flota-btn">Kontakt</button></a>
-                        </div>
-                    </div>
-                    <div className="flota-auto">
                         <div className="lewo"> <img src={domino} alt="Zdjęcie autokaru" /></div>
                         <div className="prawo">
                             <p className="pnag">Irisbus Domino <span className="categorytext"> 53 Miejsc</span></p>
@@ -125,20 +101,45 @@ function Maindt (){
                             <a href="#kontakt"><button className="flota-btn">Kontakt</button></a>
                         </div>
                     </div>
-
-                </div>
-                <br id="oferta"/>
-                <div className="oferta">
-                    <p className="pnag">Nasza Oferta : </p>
-                    <hr className="kontakt-linia"/>
-                    <br />
-                    <div className="oferta-dol">
-                        <br />
-                        <p className="textl">Zajmujemy się kompleksową obsługą grup wycieczkowych, szkolnych, kolonijnych, wczasowych. Jesteśmy w stanie elastycznie dostosować się do potrzeb klienta, a ze względu na szeroką game różnych pojazdów także do wielkości grupy. Samochody wyposażone są w pojemne luki bagażowe i klimatyzacje co podnosi jakość podróżowania.</p>
-                        <br /><hr  className="oferta-linia"/><br />
-                        <p className="textl">Planujesz wesele? A może firmowy wyjazd? Czy możne chcesz pojechać na imprezę z grupą przyjaciół? Dla naszych klientów mamy specjalne oferty na obsługę transportu także w nocy, wedle potrzeb i fantazji. Oferujemy wynajem samochodu z szoferem, który będzie do waszej dyspozycji nawet przez całą noc.</p>
+                    <div className="flota-auto">
+                        <div className="lewo"> <img src={vanhool} alt="Zdjęcie autokaru" /></div>
+                        <div className="prawo">
+                            <p className="pnag">VanHool T916 <span className="categorytext"> 59 Miejsc</span></p>
+                            <hr className="flota-auto-linia"/>
+                            <br />
+                            <p className="flota-mintext">Lorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritum</p>
+                            <a href="#kontakt"><button className="flota-btn">Kontakt</button></a>
+                        </div>
                     </div>
                 </div>
+                <br id="onas"/>
+                <div className="onas-dol">
+                    <p className="pnag">O nas</p>
+                    <hr className="onas-dol-dol-linia"/>
+                    <br />
+                    <div className="onas-dol-dol">
+                        <div className="lewo">
+                            <p className="text">Zakład Usług transportowych<b> Dar-Trans</b> Dariusz Dukiewicz  powstał w 1997 roku z inicjatywy zawodowego kierowcy Dariusza Dukiewicza.</p>
+                            <p className="text">Jesteśmy małą firmą zajmującą się transportem osobowym już od <b>ponad 20 lat.</b></p>
+                            <br />
+                            <p className="btext">Oferujemy konkurencyjne ceny, wysoką jakość usług oraz przed wszystkim dbamy o bezpieczeństwo naszych pasażerów.</p>
+                            <br />
+                            <p className="text">Do każdego klienta podchodzimy indywidualnie, co sprawia, że idealnie dostosujemy się do waszych potrzeb.</p>
+                        </div >
+                        <div className="prawo">
+                            <center>
+                                <a href="https://www.baza-firm.com.pl/komunikacja-transport-pasa%C5%BCerski/z%C5%82oty-stok/dar-trans-zak%C5%82ad-us%C5%82ug-transportowych-dariusz-dukiewicz/pl/194387.html">
+                                <img src={bazafirm} alt="medale"  className="baza"/></a>
+                                <br />
+                                <a href="https://www.firmagodnazaufania.pl/company,44443,zaklad-uslug-transportowych-dar-trans-dariusz-dukiewicz">
+                                <img src={medal} alt="medale" className="medale"/>
+                                </a>
+                            </center>
+                        </div>
+                        
+                    </div>
+                </div>
+                
                 <br id="kontakt"/>
                 <div className="kontakt-div">
                     <p className="pnag">Kontakt </p>
