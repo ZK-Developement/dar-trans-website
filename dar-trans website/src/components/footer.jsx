@@ -15,8 +15,8 @@ function Footer (){
                         <div className="lista">
                             <p>​🇰​​🇴​​🇳​​🇹​​🇦​​🇰​​🇹​</p>
                             <ul className="listal">
-                                <a href="" className=""><li>Tel.+48 604-190-948</li></a>
-                                <a href="" className=""><li>e-mail.dariuszdukiewicz@wp.pl</li></a>
+                                <a href="" className=""><li className="li">Tel.+48 604-190-948</li></a>
+                                <a href="mailto:dariuszdukiewicz@wp.pl" className=""><li className="li">e-mail.dariuszdukiewicz@wp.pl</li></a>
                                 <br />
                                 <li className="godziny">Poniedziałek—piątek: 8:00-20:00</li>
                                 <li className="godziny">Sobota & Niedziela: 10:00-20:00</li>
@@ -38,7 +38,7 @@ function Footer (){
                         <div className="lista">
                             <p>​🇵​​🇴​​🇩​​🇸​​🇹​​🇷​​🇴​​🇳​​🇾​​</p>
                             <ul className="listal">
-                                <li 
+                                <li className="li"
                                     onClick={() => {
                                     nav("/")
                                     setTimeout(() => {
@@ -48,7 +48,7 @@ function Footer (){
                                 >
                                     Strona Główna
                                 </li>
-                                <li 
+                                <li className="li"
                                     onClick={() => {
                                     nav("/Flota")
                                     setTimeout(() => {
@@ -58,7 +58,7 @@ function Footer (){
                                 >
                                     Nasza Flota
                                 </li>
-                                <li 
+                                <li className="li"
                                     onClick={() => {
                                     nav("/O-Firmie")
                                     setTimeout(() => {
@@ -68,9 +68,9 @@ function Footer (){
                                 >
                                     O Nas
                                 </li>
-                                <a href=""><li>Galeria</li></a>
-                                <a href=""><li>Kontakt</li></a>
-                                <a href=""><li>Polityka Prywatności</li></a>
+                                <a href=""><li className="li">Galeria</li></a>
+                                <a href=""><li className="li">Kontakt</li></a>
+                                <a href=""><li className="li">Polityka Prywatności</li></a>
                             </ul>
                         </div>
                         

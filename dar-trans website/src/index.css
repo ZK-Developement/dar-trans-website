@@ -174,8 +174,8 @@ footer
   text-align: left;
   list-style: none;
 }
-.listal li { transition: 200ms;}
-.listal li:hover
+.listal .li { transition: 200ms;}
+.listal .li:hover
 { color: rgb(65, 65, 65);text-decoration: underline;cursor: pointer;}
 .adzk {display: flex;}
 .adzk img {height: 3vh; transform: translateY(0.3vh);filter: opacity(70%) }
