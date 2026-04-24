@@ -95,15 +95,16 @@ header img
   transform: scale(1.8) translateY(0.5vh);
   margin-right: 3vh; 
 }
-h1,h2,h3{font-weight: 500; font-size: 5vh; text-shadow: 0vh 0vh 0.2vh #ffffff;}
+h1,h2,h3{ color: rgb(0, 0, 0); font-weight: 500; font-size: 5vh; text-shadow: 0vh 0vh 0.4vh #ffffff;}
 .nag { font-size: 4vh; font-weight: bold;margin: 1vh; text-align: left;}
+.cnag { font-size: 4vh; font-weight: bold;margin: 1vh;}
 .pnag { font-size: 3vh; font-weight: bold;margin: 1vh;text-align: left;}
 .pnagc { font-size: 3vh; font-weight: bold;margin: 1vh;text-align: center;}
 .text { font-size: 2vh; margin: 1vh;}
 .textl { font-size: 2vh; margin: 1vh; text-align: left;}
 .btext { font-size: 2vh;font-weight: bold; margin: 1vh;}
 .mintext { font-size: 1vh;font-weight: bold; margin: 0.5vh; color: gray;}
-.midtext { font-size: 1.5vh;font-weight: bold; margin: 0.5vh; color: gray;}
+.midtext { font-size: 1.5vh; margin: 0.5vh; color: gray;}
 
 header ul{
   list-style: none;
@@ -160,28 +161,66 @@ header li:active{
 
 footer
 {
+  margin-top: 3vh;
+  border-radius: 2vh;
+  height: 20vh;
+  background-color: white;
+  box-shadow: 0vh 0vh 3vh  rgba(0, 0, 0, 0.115);
+}
+.lista { text-align: left; font-size: 1.8vh; font-weight: 500; width: 20%; background-color: rgba(255, 0, 0, 0);}
+.lista p { color: gray; transform: translateX(4vh); font-size: 1.5vh;}
+.listal
+{
+  text-align: left;
+  list-style: none;
+}
+.listal a { transition: 200ms;}
+.listal a:hover
+{ color: rgb(65, 65, 65);text-decoration: underline;}
+.adzk {display: flex;}
+.adzk img {height: 3vh; transform: translateY(0.3vh);filter: opacity(70%) }
+.adzk img:hover {height: 3vh; transform: translateY(0.3vh);filter: opacity(100%) }
+
+.wpz
+{
+  display: flex;
+  width: 100%; 
+  justify-content: center;
+  align-content: center;
+  gap: 3vh;
+}
+.footerh
+{
+  height: 14vh;
+  width: 100%;
+  display: flex;
+  gap: 10vh;
+  justify-content: center;
+}
+
+.footer
+{
   padding: 1vh;
   padding-left: 5vh;
   padding-right: 5vh;
   display: flex;
   margin-top: 5vh;
   background-color: white;
-  box-shadow: 0vh 0vh 3vh  rgba(0, 0, 0, 0.115);
+  
   height: 6vh;
   align-items: center;
   justify-content: space-between;
   align-content: center;
+}
 
-}
-footer img
-{
-  height: 4vh;
-}
-footer .btext { font-size: 1.5vh;}
+.footer .btext { font-size: 1.5vh;}
 .zkad
 {
   display: flex;
 }
+.zkadad {transition: 200ms; color: gray;}
+.zkadad {color: black;}
+
 .zkad .mintext{
   transform: translateX(-17vh) translateY(-2vh);
 }
@@ -216,12 +255,88 @@ footer .btext { font-size: 1.5vh;}
   width: 100%;
   height: 82vh;
   background: 
-  linear-gradient(rgba(255, 255, 255, 0.539),
+  linear-gradient(rgba(255, 255, 255, 0.242),rgba(255, 255, 255, 0.24),rgba(255, 255, 255, 0.087),rgba(255, 255, 255, 0.272),
   rgb(255, 255, 255)),
-  url(/siedzenia.jpg) 
+  url(/galeria.jpg) 
   center center / cover no-repeat;
   border-radius: 2vh;
   
+}
+.idk
+{
+  margin-top: 10vh;
+  height: 35vh;
+  background: 
+  linear-gradient(rgba(255, 255, 255, 0.242),rgba(255, 255, 255, 0.24),rgba(255, 255, 255, 0.087),rgba(255, 255, 255, 0.081),
+  rgba(255, 255, 255, 0.04)),
+  url(/galeria.jpg) 
+  center center / cover no-repeat;
+  border-radius: 0.5vh;
+  color: white;
+  padding: 5vh;
+  text-shadow: 0vh 0vh 0.4vh #ffffff65;
+}
+.idk button
+{
+  background-color: rgba(255, 255, 255, 0);
+  border: solid white 0.1vh;
+  width: 20vh;
+  font-size: 2vh;
+  float: left;
+  margin-top: 20vh;
+  transition: 200ms;
+  border-radius: 1.5vh;
+}
+.idk button:hover
+{
+  background-color: rgb(255, 255, 255);
+  border: solid white 0.1vh;
+  box-shadow: 0vh 0vh 3vh  rgba(255, 255, 255, 0.37);
+  color: black;
+  transform: scale(1.05) translateY(-0.5vh);
+}
+.mintestidk
+{
+  color: rgb(230, 230, 230);
+  text-align: left;
+  margin: 0;
+  font-size: 2vh;
+}
+
+.info1
+{
+  margin-top: 15vh;
+  margin-bottom: 10vh;
+  background-color: white;
+  width: 85%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  border-radius: 2vh;
+  font-size: 2vh;
+  font-weight: 500;
+  box-shadow: 0 0 1vh rgba(166, 166, 166, 0.409);
+  transition: 300ms;
+}
+.info1:hover
+{
+  box-shadow: 0 0 1vh rgba(128, 128, 128, 0.409);
+  transform: scale(1.01)translateY(-0.2vh);
+}
+.infohtext{ font-weight: 500;font-size: 1.7vh; text-align: left; margin: 0; color: gray;}
+.infoltext{ font-weight: 500;font-size: 2vh; text-align: left; margin: 0; }
+.info1 img
+{
+  height: 5vh;
+  transform: translateY(0.5vh);
+}
+.info 
+{
+  display: flex;
+  gap: 1vh;
 }
 .onas-glowna .lewo
 {
@@ -236,14 +351,14 @@ footer .btext { font-size: 1.5vh;}
   padding: 5vh;
 }
 .onas-glowna .prawo img { transform: scale(1.2) translateX(-6vh); transition: 200ms;}
-.onas-firma { justify-content: center; margin-top: 5vh;}
-.onas-firma img {height: 24vh;transform: scale(2); margin: 0;}
+.onas-firma { justify-content: center;align-content: center; margin-top: 5vh; height: 50vh;}
+.onas-firma img {height: 24vh;transform: scale(3); margin: 0;}
 .onas-dol-linia { width: 50vh; float: left; margin-left: 1.5vh; margin-bottom: 0vh;}
-.onas-dol-dol { display: flex; text-align: left; margin-top: 0vh; justify-content: space-between;}
-.onas-dol-dol .polska { height: 30vh; transform: scale(1.7) translateX(-10vh); transition: 200ms;}
-.onas-dol-dol .polska:hover { transform: scale(1.8) translateX(-9.5vh);}
-.onas-dol-dol .lewo{ width: 50%; padding: 5vh; align-content: center;}
-.onas-dol-dol .prawo { background-color: rgba(255, 0, 0, 0); width: 60vh; justify-content: center; align-content: center; align-items: center; justify-items: center;}
+.onas-dol-dol { display: flex; text-align: left; margin-top: 0vh; justify-content: center; gap: 20vh;}
+.onas-dol-dol .polska { height: 30vh; transform: scale(2) translateY(4vh); transition: 200ms;}
+.onas-dol-dol .polska:hover { transform: scale(2.05)translateY(4vh)}
+.onas-dol-dol .lewo{ padding: 5vh; align-content: center; width: 80vh; font-size: 2.3vh;}
+.onas-dol-dol .prawo { background-color: rgba(255, 0, 0, 0); width: 60vh; justify-content: center; align-content: center;}
 .onas-dol-dol .prawo .medale { height: 15vh; }
 .onas-dol-dol .prawo .baza { height: 10vh; }
 .flota
@@ -313,7 +428,7 @@ footer .btext { font-size: 1.5vh;}
 {
   padding: 5vh;
   width: 100%;
-  height: 40vh;
+  height: 90vh;
 }
 .kontakt-div
 {
@@ -381,15 +496,25 @@ footer .btext { font-size: 1.5vh;}
 .onas-dol-dol-linia { width: 15vh; float: left; margin-left: 1.5vh; margin-bottom: 0vh;}
 .oferta-dol
 {
-  width: 110vh; 
+  width: 100%; 
   text-align: left;
   display: flex;
   justify-content: space-between;
-  font-size: 2vh;
+  margin-bottom: 10vh;
 }
 .oferta-dol p { margin: 0;}
-.xdxd {transform:  translateY(-8vh);}
+
+.xdxd {
+  transform:  translateY(-8vh);
+  display: flex;
+  gap: 20vh;
+  padding-left: 20vh; 
+  padding-right: 20vh;
+}
+.xdxd .prawo {justify-content: center; align-content: center;}
 .xdxd .text { font-size: 2.3vh;}
+.xdxd img { height: 40vh;transition: 200ms;}
+.xdxd img:hover { transform: scale(1.04) translateY(-1vh);}
 .oferta-linia
 {
   width: 98vh;

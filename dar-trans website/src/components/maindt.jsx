@@ -1,5 +1,6 @@
 import autokar1 from "../assets/images/autokar1.svg"
 import icon from "../assets/images/logodt.svg"
+import iconw from "../assets/images/dartrans logo redesign-white.svg"
 import polska from "../assets/images/polska.svg"
 import coachph from "../assets/images/coachplaceholder.svg"
 import mercedes from "../assets/images/mercedes.png"
@@ -10,6 +11,10 @@ import domino from "../assets/images/domino.png"
 import manicon from "../assets/images/manicon.png"
 import bazafirm from "../assets/images/bazafirm.gif"
 import medal from "../assets/images/medal.png"
+import picon from "../assets/images/phoneicon.png"
+import staricon from "../assets/images/staricon.png"
+import expicon from "../assets/images/expicon.png"
+import zdj1 from "../assets/images/placeholderzdj1.png"
 function Maindt (){
     return(
         <>
@@ -19,153 +24,97 @@ function Maindt (){
                 <div className="onas-glowna">
                     <div className="lewo">
                         <div className="onas-firma">
-                            <img src={icon} alt="logofirmy" />
+                            <img src={iconw} alt="logofirmy" />
                         </div>
-                        <div>
-                            <h1 className="text">Jesteśmy tu specjalnie <b>dla Ciebie.</b></h1>
-                            <h2 className="text">Pomożemy Ci dotrzeć do celu,niezależnie od tego czy podróżujesz <b>sam</b> czy <b>dużą grupą.</b></h2>
-                            <h3 className="btext">Zapraszamy do zapoznania się z naszą ofertą.</h3>
+                        <br id="oferta"/>
+                        <div className="info1">
+                            <div className="info">
+                                <img src={picon}/>
+                                <div>
+                                    <p className="infohtext">​​🇸​​🇰​​🇴​​🇳​​🇹​​🇦​​🇰​​🇹​​🇺​​🇯​ ​🇸​​🇮​​🇪​ ​🇿​ ​🇳​​🇦​​🇲​​🇮​​</p>
+                                    <p className="infoltext">Tel.+48 604-190-948</p>
+                                </div>
+                                
+                            </div>
+                            <div className="info">
+                                <img src={staricon}/>
+                                <div>
+                                    <p className="infohtext">​🇯​​🇦​​🇰​​🇴​​🇸​​🇨​ ​🇺​​🇸​​🇱​​🇺​​🇬​</p>
+                                    <p className="infoltext">4.8 Oceny klientów</p>
+                                </div>
+                                
+                            </div>
+                            <div className="info">
+                                <img src={expicon}/>
+                                <div>
+                                    <p className="infohtext">​🇩​​🇴​​🇸​​🇼​​🇮​​🇦​​🇩​​🇨​​🇿​​🇪​​🇳​​🇮​​🇪​</p>
+                                    <p className="infoltext">Ponad 20 lat doświadczenia</p>
+                                </div>
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
-                <br id="oferta"/>
+                <br />
                 <div className="oferta">
+                    <br />
                     <br />
                     <div className="oferta-dol">
                         <div className="xdxd">
-                            <br />
-                            <p className="text">Zajmujemy się kompleksową obsługą grup wycieczkowych, szkolnych, kolonijnych, wczasowych. Jesteśmy w stanie elastycznie dostosować się do potrzeb klienta, a ze względu na szeroką game różnych pojazdów także do wielkości grupy. Samochody wyposażone są w pojemne luki bagażowe i klimatyzacje co podnosi jakość podróżowania.</p>
-                            <br /><hr  className="oferta-linia"/><br />
-                            <p className="text">Planujesz wesele? A może firmowy wyjazd? Czy możne chcesz pojechać na imprezę z grupą przyjaciół? Dla naszych klientów mamy specjalne oferty na obsługę transportu także w nocy, wedle potrzeb i fantazji. Oferujemy wynajem samochodu z szoferem, który będzie do waszej dyspozycji nawet przez całą noc.</p>
+                            <img src={zdj1} />
+                            <div className="prawo">
+                                <p className="nag">Jesteśmy tu specjalnie dla Ciebie.</p>
+                                <br />
+                                <p className="text">Zajmujemy się obsługą grup wycieczkowych, szkolnych i firmowych. Dobieramy pojazd do wielkości grupy i potrzeb klienta. Nasze auta mają duże bagażniki i klimatyzację, co zapewnia komfort podróży.</p>
+                                <br />
+                                <p className="text">Organizujesz wesele, wyjazd firmowy lub imprezę? Oferujemy transport także w nocy. Możesz wynająć samochód z kierowcą na kilka godzin lub całą noc.</p>
+                            </div>
                         </div>
-                        <div className="ofprawo">
+                    </div>
+                    <div className="oferta-dol">
+                        <div className="xdxd">
+                            <div className="prawo">
+                                <p className="nag">Pomożemy Ci dotrzeć do celu,niezależnie od tego czy podróżujesz sam czy dużą grupą.</p>
+                                <br />
+                                <p className="text">Dbamy o punktualność i bezpieczeństwo na każdym etapie podróży, więc nie tracisz czasu i jedziesz bez stresu.</p>
+                                <br />
+                                <p className="text">Nasi kierowcy posiadają doświadczenie oraz dobrą znajomość tras, co przekłada się na sprawny i terminowy przejazd. Elastycznie reagujemy na zmiany planów i dostosowujemy się do potrzeb klienta. </p>
+                                <br />
+                                <p className="text">Zapewniamy sprawny kontakt oraz jasne warunki współpracy, a proces rezerwacji jest szybki i przejrzysty.</p>
+                            </div>
+                            <img src={zdj1} />
                         </div>
+                        
                     </div>
                 </div>
                 <div className="onas-dol">
-                    <p className="pnag">Przewozy na terenie całej Polski</p>
-                    <hr className="onas-dol-linia"/>
-                    <br />
                     <div className="onas-dol-dol">
-                        <div className="lewo">
-                            <p className="text">W ofercie posiadamy zarówno duże autokary turystyczne 55-cio osobowe jak i mniejsze 35-cio, 20-sto osobowe jak i busy 8-mio osobowe. Nasze samochody są klimatyzowane i wygodne, posiadają pakowne luki bagażowe, ale najważniejsze, że zawsze bezpiecznie dowiozą was tam, i z powrotem.</p>
-                            <p className="text">Każdy klient rozliczany jest indywidualnie, przy dłuższej współpracy proponujemy atrakcyjne warunki. </p>
-                        </div >
                         <img src={polska} alt="zdjpolski" className="polska" />
+                        <div className="lewo">
+                            <p className="nag">Przewozy na terenie całej Polski</p>
+                            <br />
+                            <p className="">W ofercie posiadamy zarówno duże autokary turystyczne 55-cio osobowe jak i mniejsze 35-cio, 20-sto osobowe jak i busy 8-mio osobowe. Nasze samochody są klimatyzowane i wygodne, posiadają pakowne luki bagażowe, ale najważniejsze, że zawsze bezpiecznie dowiozą was tam, i z powrotem.</p>
+                            <p className="">Każdy klient rozliczany jest indywidualnie, przy dłuższej współpracy proponujemy atrakcyjne warunki. </p>
+                        </div >
+                        
                     </div>
                 </div>
+                <div className="idk">
+                    <p className="mintestidk">​🇸​​🇰​​🇴​​🇳​​🇹​​🇦​​🇰​​🇹​​🇺​​🇯​ ​🇸​​🇮​​🇪​ ​🇿​ ​🇳​​🇦​​🇲​​🇮​​</p>
+                    <p className="pnag">Skontaktuj się z nami aby dowiedzieć się więcej o naszych usługach.​</p>
+                    <button>Kontakt</button>
+                </div>
+                <br />
+                <center><p className="cnag">Work in Progress</p></center>
                 
                 
                 <br id="flota"/>
-                <div className="flota">
-                    <p className="pnag">Nasza Flota :</p>
-                    <hr className="flota-linia"/>
-                    <br />
-                    <div className="flota-auto">
-                        <div className="lewo"> <img src={ford} alt="Zdjęcie autokaru" /></div>
-                        <div className="prawo">
-                            <p className="pnag">Ford Transit <span className="categorytext"> 17 Miejsc</span></p>
-                            <hr className="flota-auto-linia"/>
-                            <br />
-                            <p className="flota-mintext">Lorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritum</p>
-                            <a href="#kontakt"><button className="flota-btn">Kontakt</button></a>
-                        </div>
-                    </div>
-                    <div className="flota-auto">
-                        <div className="lewo"> <img src={mercedes} alt="Zdjęcie autokaru" /></div>
-                        <div className="prawo">
-                            <p className="pnag">Mercedes Sprinter <span className="categorytext"> 20 Miejsc</span></p>
-                            <hr className="flota-auto-linia"/>
-                            <br />
-                            <p className="flota-mintext">Lorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritum</p>
-                            <a href="#kontakt"><button className="flota-btn">Kontakt</button></a>
-                        </div>
-                    </div>
-                    <div className="flota-auto">
-                        <div className="lewo"> <img src={noge} alt="Zdjęcie autokaru" /></div>
-                        <div className="prawo">
-                            <p className="pnag">Irisbus Noge <span className="categorytext"> 35 Miejsc</span></p>
-                            <hr className="flota-auto-linia"/>
-                            <br />
-                            <p className="flota-mintext">Lorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritum</p>
-                            <a href="#kontakt"><button className="flota-btn">Kontakt</button></a>
-                        </div>
-                    </div>
-                    <div className="flota-auto">
-                        <div className="lewo"> <img src={domino} alt="Zdjęcie autokaru" /></div>
-                        <div className="prawo">
-                            <p className="pnag">Irisbus Domino <span className="categorytext"> 53 Miejsc</span></p>
-                            <hr className="flota-auto-linia"/>
-                            <br />
-                            <p className="flota-mintext">Lorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritum</p>
-                            <a href="#kontakt"><button className="flota-btn">Kontakt</button></a>
-                        </div>
-                    </div>
-                    <div className="flota-auto">
-                        <div className="lewo"> <img src={vanhool} alt="Zdjęcie autokaru" /></div>
-                        <div className="prawo">
-                            <p className="pnag">VanHool T916 <span className="categorytext"> 59 Miejsc</span></p>
-                            <hr className="flota-auto-linia"/>
-                            <br />
-                            <p className="flota-mintext">Lorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritumLorem ipsum for isis meritum</p>
-                            <a href="#kontakt"><button className="flota-btn">Kontakt</button></a>
-                        </div>
-                    </div>
-                </div>
+                
                 <br id="onas"/>
-                <div className="onas-dol">
-                    <p className="pnag">O nas</p>
-                    <hr className="onas-dol-dol-linia"/>
-                    <br />
-                    <div className="onas-dol-dol">
-                        <div className="lewo">
-                            <p className="text">Zakład Usług transportowych<b> Dar-Trans</b> Dariusz Dukiewicz  powstał w 1997 roku z inicjatywy zawodowego kierowcy Dariusza Dukiewicza.</p>
-                            <p className="text">Jesteśmy małą firmą zajmującą się transportem osobowym już od <b>ponad 20 lat.</b></p>
-                            <br />
-                            <p className="btext">Oferujemy konkurencyjne ceny, wysoką jakość usług oraz przed wszystkim dbamy o bezpieczeństwo naszych pasażerów.</p>
-                            <br />
-                            <p className="text">Do każdego klienta podchodzimy indywidualnie, co sprawia, że idealnie dostosujemy się do waszych potrzeb.</p>
-                        </div >
-                        <div className="prawo">
-                            <center>
-                                <a href="https://www.baza-firm.com.pl/komunikacja-transport-pasa%C5%BCerski/z%C5%82oty-stok/dar-trans-zak%C5%82ad-us%C5%82ug-transportowych-dariusz-dukiewicz/pl/194387.html">
-                                <img src={bazafirm} alt="medale"  className="baza"/></a>
-                                <br />
-                                <a href="https://www.firmagodnazaufania.pl/company,44443,zaklad-uslug-transportowych-dar-trans-dariusz-dukiewicz">
-                                <img src={medal} alt="medale" className="medale"/>
-                                </a>
-                            </center>
-                        </div>
-                        
-                    </div>
-                </div>
+                
                 
                 <br id="kontakt"/>
-                <div className="kontakt-div">
-                    <p className="pnag">Kontakt </p>
-                    <hr className="kontakt-linia"/>
-                    <br /><br />
-                    <p className="pnagc">Zakład Usług Transportowych DAR – TRANS</p>
-                    <br /><br />
-                    <div className="kontakt-in">
-                        
-                        <div className="profil">
-                            <img src={manicon} alt="manicon" />
-                            <div className="profil-lewo">
-                                <p className="btext">Dariusz Dukiewicz</p>
-                                <p className="text"><a href="mailto:dariuszdukiewicz@wp.pl" className="emailhov">dariuszdukiewicz@wp.pl</a></p>
-                            </div>
-                            <hr className="profil-hr"></hr>
-                            <div className="profil-lewo">
-                                <p className="text">Mąkolno 72</p>
-                                <p className="text">57-250 Złoty Stok</p>
-                                <p className="text">tel. +48 604-190-948</p>
-                            </div>
-                        </div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.48641531305!2d16.8394131!3d50.450666299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470e1f5486d99e15%3A0x96b773556315c8c!2sZak%C5%82ad%20Us%C5%82ug%20Transportowych%20DAR-TRANS%20Dariusz%20Dukiewicz!5e0!3m2!1spl!2spl!4v1773505207678!5m2!1spl!2spl" 
-                           className="mapa" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
+                
             </main>
         </center>
             
