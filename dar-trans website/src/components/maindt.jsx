@@ -15,6 +15,8 @@ import picon from "../assets/images/phoneicon.png"
 import staricon from "../assets/images/staricon.png"
 import expicon from "../assets/images/expicon.png"
 import zdj1 from "../assets/images/placeholderzdj1.png"
+import { Link, useNavigate } from "react-router-dom"
+
 function Maindt (){
     return(
         <>
@@ -104,17 +106,16 @@ function Maindt (){
                     <p className="pnag">Skontaktuj się z nami aby dowiedzieć się więcej o naszych usługach.​</p>
                     <button>Kontakt</button>
                 </div>
-                <br />
-                <center><p className="cnag">Work in Progress</p></center>
-                
-                
-                <br id="flota"/>
-                
-                <br id="onas"/>
-                
-                
-                <br id="kontakt"/>
-                
+                <div className="zarezerwuj">
+                    <p className="btext">​🇸​​🇰​​🇴​​🇷​​🇿​​🇾​​🇸​​🇹​​🇦​​🇯​ ​🇿​ ​🇳​​🇦​​🇸​​🇿​​🇪​​🇯​ ​🇴​​🇫​​🇪​​🇷​​🇹​​🇾​</p>
+                    <p className="cnag">Zarezerwuj przejazd już dziś</p>
+                    <p className="text">Zadzwoń i umów się już teraz</p>
+                    <p className="text">Tel.+48 604-190-948</p>
+                    <button>Kontakt</button>
+                    
+
+                </div>
+
             </main>
         </center>
             

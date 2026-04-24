@@ -1,7 +1,10 @@
 import icon from "../assets/images/logodt.svg"
 import picon from "../assets/images/phoneicon.png"
+import { Link, useNavigate } from "react-router-dom"
 function Header ()
 {
+    const nav = useNavigate()
+
     return(
         <>
         <center>
@@ -19,10 +22,30 @@ function Header ()
                 <div>
                     <nav>
                     <ul className="flex">
-                        <a href="#glowna"><li>Onas</li></a>
-                        <a href="#oferta"><li>Oferta</li></a>
-                        <a href="#flota"><li>Flota</li></a>
-                        <a href="#onas"><li>O Firmie</li></a>
+                        <li
+                            onClick={() => {
+                            nav("/")
+                            setTimeout(() => {
+                                document.getElementById("glowna")?.scrollIntoView({ behavior: "smooth" })
+                            }, 100)
+                            }}
+                        >
+                            Strona Główna
+                        </li>
+
+                        <li
+                            onClick={() => {
+                            nav("/")
+                            setTimeout(() => {
+                                document.getElementById("oferta")?.scrollIntoView({ behavior: "smooth" })
+                            }, 100)
+                            }}
+                        >
+                            Oferta
+                        </li>
+
+                    <li><Link to="/flota">Flota</Link></li>
+                    <li><Link to="/o-firmie">O Firmie</Link></li>
                     </ul>
                     </nav>
                 </div>

@@ -163,7 +163,7 @@ footer
 {
   margin-top: 3vh;
   border-radius: 2vh;
-  height: 20vh;
+  height: 36vh;
   background-color: white;
   box-shadow: 0vh 0vh 3vh  rgba(0, 0, 0, 0.115);
 }
@@ -174,9 +174,9 @@ footer
   text-align: left;
   list-style: none;
 }
-.listal a { transition: 200ms;}
-.listal a:hover
-{ color: rgb(65, 65, 65);text-decoration: underline;}
+.listal li { transition: 200ms;}
+.listal li:hover
+{ color: rgb(65, 65, 65);text-decoration: underline;cursor: pointer;}
 .adzk {display: flex;}
 .adzk img {height: 3vh; transform: translateY(0.3vh);filter: opacity(70%) }
 .adzk img:hover {height: 3vh; transform: translateY(0.3vh);filter: opacity(100%) }
@@ -191,7 +191,7 @@ footer
 }
 .footerh
 {
-  height: 14vh;
+  height: 30vh;
   width: 100%;
   display: flex;
   gap: 10vh;
@@ -205,8 +205,8 @@ footer
   padding-right: 5vh;
   display: flex;
   margin-top: 5vh;
-  background-color: white;
-  
+  background-color: rgb(251, 251, 251);
+  box-shadow: 0vh 0vh 3vh  rgba(0, 0, 0, 0.115);
   height: 6vh;
   align-items: center;
   justify-content: space-between;
@@ -246,7 +246,6 @@ footer
   margin-top: 10vh;
   width: auto;
   height: auto;
-  
 }
 
 .onas-glowna
@@ -294,6 +293,14 @@ footer
   box-shadow: 0vh 0vh 3vh  rgba(255, 255, 255, 0.37);
   color: black;
   transform: scale(1.05) translateY(-0.5vh);
+}
+.idk button:active
+{
+  background-color: rgb(255, 255, 255);
+  border: solid white 0.1vh;
+  box-shadow: 0vh 0vh 3vh  rgba(255, 255, 255, 0.37);
+  color: black;
+  transform: scale(0.98) translateY(0.5vh);
 }
 .mintestidk
 {
@@ -525,8 +532,70 @@ footer
 
 
 .ofprawo
-
 {
   width: 10vh;
   height: 10vh;
+}
+
+.zarezerwuj
+{
+  height: 40vh;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  padding-top: 5vh;
+  text-align: center;
+}
+.zarezerwuj button
+{
+  margin-top: 6vh;
+  margin-bottom: 5vh;
+  width: 20vh;
+  font-size: 2vh;
+  transition: 200ms;
+}
+.zarezerwuj button:hover
+{
+  box-shadow: 0vh 0vh 2vh  rgba(0, 0, 0, 0.251);
+  color: rgb(255, 255, 255);
+  transform: scale(1.05) translateY(-0.5vh);
+
+}
+.zarezerwuj button:active
+{
+  box-shadow: 0vh 0vh 3vh  rgba(255, 255, 255, 0.37);
+  color: rgb(255, 255, 255);
+  transform: scale(0.98) translateY(0.5vh);
+}
+.godziny
+{
+  color: gray;
+  font-size: 1.5vh;
+}
+.flex li:hover{
+  cursor:pointer ;
+}
+.main-flota
+{
+  border-radius: 2vh;
+  box-shadow: 0vh 0vh 3vh  rgba(0, 0, 0, 0.115);
+  background-color: white;
+  margin-left: 10vh;
+  margin-right: 10vh;
+  margin-top: 12vh;
+  width: auto;
+  height: auto;
+  min-height: 30vh;
+}
+.main-ofirmie
+{
+  border-radius: 2vh;
+  box-shadow: 0vh 0vh 3vh  rgba(0, 0, 0, 0.115);
+  background-color: white;
+  margin-left: 10vh;
+  margin-right: 10vh;
+  margin-top: 12vh;
+  width: auto;
+  height: auto;
+  min-height: 30vh;
 }
