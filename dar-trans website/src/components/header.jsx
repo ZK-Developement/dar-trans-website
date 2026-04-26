@@ -49,12 +49,20 @@ function Header ()
                     </ul>
                     </nav>
                 </div>
-                <a href="#kontakt" className="kontakta">
-                <div className="kontakt">
+                
+                
+                <div className="kontakt"
+                onClick={() => {
+                            nav("/Kontakt")
+                            setTimeout(() => {
+                                document.getElementById("oferta")?.scrollIntoView({ behavior: "smooth" })
+                            }, 100)
+                            }}
+                >
                     <img src={picon} alt="phoneicon" className="picon" />
                     <p className="btext">Kontakt</p>
                 </div>
-                </a>
+                
                 
             </header>
         </center>

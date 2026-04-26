@@ -151,11 +151,18 @@ header li:active{
   100% { transform:translateY(1vh) rotate(0deg); }
 }
 .kontakt { display: flex;  height: 5vh; justify-content: center; align-content: center;}
-.kontakta { transition: 200ms; border-radius: 2vh; padding: 0.4vh 1.5vh;}
-.kontakta:hover
+.kontakt { transition: 200ms; border-radius: 2vh; padding: 0.4vh 1.5vh;}
+.kontakt:hover
 {
+  cursor: pointer;
   box-shadow: 0vh 0vh 3vh  rgba(0, 0, 0, 0.257);
   transform: scale(1.02) translateY(-0.5vh) ;
+}
+.kontakt:active
+{
+  cursor: pointer;
+  box-shadow: 0vh 0vh 3vh  rgba(0, 0, 0, 0.257);
+  transform: scale(0.9) translateY(0.3vh) ;
 }
 .kontakt .btext { font-size: 2vh; font-weight: 500;}
 

@@ -68,9 +68,36 @@ function Footer (){
                                 >
                                     O Nas
                                 </li>
-                                <a href=""><li className="li">Galeria</li></a>
-                                <a href=""><li className="li">Kontakt</li></a>
-                                <a href=""><li className="li">Polityka Prywatności</li></a>
+                                <li className="li"
+                                    onClick={() => {
+                                    nav("/Galeria")
+                                    setTimeout(() => {
+                                        document.getElementById("glowna")?.scrollIntoView({ behavior: "smooth" })
+                                    }, 100)
+                                    }}
+                                >
+                                    Galeria
+                                </li>
+                                <li className="li"
+                                    onClick={() => {
+                                    nav("/Kontakt")
+                                    setTimeout(() => {
+                                        document.getElementById("glowna")?.scrollIntoView({ behavior: "smooth" })
+                                    }, 100)
+                                    }}
+                                >
+                                    Kontakt
+                                </li>
+                                <li className="li"
+                                    onClick={() => {
+                                    nav("/Polityka-Prywatności")
+                                    setTimeout(() => {
+                                        document.getElementById("glowna")?.scrollIntoView({ behavior: "smooth" })
+                                    }, 100)
+                                    }}
+                                >
+                                    Polityka Prywatności
+                                </li>
                             </ul>
                         </div>
                         
