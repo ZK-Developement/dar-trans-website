@@ -5,6 +5,7 @@ import noge from "../assets/images/noge.jpg"
 import domino from "../assets/images/domino.jpg"
 import vanhol from "../assets/images/vanhol.jpg"
 
+
 function Flota (){
     return(
         <>
