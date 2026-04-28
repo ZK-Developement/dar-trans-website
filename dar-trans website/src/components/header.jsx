@@ -44,7 +44,16 @@ function Header ()
                             Oferta
                         </li>
 
-                    <li><Link to="/flota">Flota</Link></li>
+                    <li
+                            onClick={() => {
+                            nav("/Flota")
+                            setTimeout(() => {
+                                document.getElementById("glowna")?.scrollIntoView({ behavior: "smooth" })
+                            }, 100)
+                            }}
+                        >
+                            Flota
+                        </li>
                     <li><Link to="/o-firmie">O Firmie</Link></li>
                     </ul>
                     </nav>
