@@ -48,13 +48,22 @@ function Header ()
                             onClick={() => {
                             nav("/Flota")
                             setTimeout(() => {
-                                document.getElementById("glowna")?.scrollIntoView({ behavior: "smooth" })
+                                document.getElementById("flota")?.scrollIntoView({ behavior: "smooth" })
                             }, 100)
                             }}
                         >
                             Flota
                         </li>
-                    <li><Link to="/o-firmie">O Firmie</Link></li>
+                    <li
+                            onClick={() => {
+                            nav("/O-Firmie")
+                            setTimeout(() => {
+                                document.getElementById("ofirmie")?.scrollIntoView({ behavior: "smooth" })
+                            }, 100)
+                            }}
+                        >
+                            O Firmie
+                        </li>
                     </ul>
                     </nav>
                 </div>
@@ -64,7 +73,7 @@ function Header ()
                 onClick={() => {
                             nav("/Kontakt")
                             setTimeout(() => {
-                                document.getElementById("oferta")?.scrollIntoView({ behavior: "smooth" })
+                                document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" })
                             }, 100)
                             }}
                 >

@@ -52,7 +52,7 @@ function Footer (){
                                     onClick={() => {
                                     nav("/Flota")
                                     setTimeout(() => {
-                                        document.getElementById("glowna")?.scrollIntoView({ behavior: "smooth" })
+                                        document.getElementById("flota")?.scrollIntoView({ behavior: "smooth" })
                                     }, 100)
                                     }}
                                 >
@@ -62,7 +62,7 @@ function Footer (){
                                     onClick={() => {
                                     nav("/O-Firmie")
                                     setTimeout(() => {
-                                        document.getElementById("glowna")?.scrollIntoView({ behavior: "smooth" })
+                                        document.getElementById("ofirmie")?.scrollIntoView({ behavior: "smooth" })
                                     }, 100)
                                     }}
                                 >
@@ -72,7 +72,7 @@ function Footer (){
                                     onClick={() => {
                                     nav("/Galeria")
                                     setTimeout(() => {
-                                        document.getElementById("glowna")?.scrollIntoView({ behavior: "smooth" })
+                                        document.getElementById("galeria")?.scrollIntoView({ behavior: "smooth" })
                                     }, 100)
                                     }}
                                 >
@@ -82,7 +82,7 @@ function Footer (){
                                     onClick={() => {
                                     nav("/Kontakt")
                                     setTimeout(() => {
-                                        document.getElementById("glowna")?.scrollIntoView({ behavior: "smooth" })
+                                        document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" })
                                     }, 100)
                                     }}
                                 >
@@ -92,7 +92,7 @@ function Footer (){
                                     onClick={() => {
                                     nav("/Polityka-Prywatności")
                                     setTimeout(() => {
-                                        document.getElementById("glowna")?.scrollIntoView({ behavior: "smooth" })
+                                        document.getElementById("polityka")?.scrollIntoView({ behavior: "smooth" })
                                     }, 100)
                                     }}
                                 >
