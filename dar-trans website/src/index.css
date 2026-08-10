@@ -1088,6 +1088,8 @@ footer
   align-content: center;
   gap: 1vh;
   display: grid;
+  width: auto;
+  float: left;
   grid-template-columns: repeat(10,1fr);
   padding-left: 1vw;
   padding-right: 1vw;

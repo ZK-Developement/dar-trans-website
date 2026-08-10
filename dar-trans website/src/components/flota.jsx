@@ -76,7 +76,6 @@ function Flota() {
                                         </p>
                                     </div>
                                 </div>
-
                                 <center>
                                     <div className="galeria">
                                         {getGaleria("TRANSIT").map((zdjecie, index) => (
