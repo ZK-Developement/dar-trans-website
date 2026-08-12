@@ -14,22 +14,12 @@ function Kontakt (){
                         <form>
                             <input type="text"placeholder="Imię i nazwisko" required/>
                             <input type="tel" placeholder="48+ 000 000 000"required/>
-                            <input type="number" placeholder="Ile osob potrzebujesz przewieść?"required/>
-                            <select required>
-                                <option>Jaki pojazd potzrebujesz ?</option>
-                                <option value="">opcja 1</option>
-                                <option value="">opcja 1</option>
-                                <option value="">opcja 1</option>
-                                <option value="">opcja 1</option>
-                                <option value="">opcja 1</option>
-                                <option value="">opcja 1</option>
-                            </select>
+                            <input type="text" placeholder="Ile osob potrzebujesz przewieść?"required/>
                             <textarea placeholder="Dodatkowe informacje"></textarea>
                             <div>
                                 <button>Wyślij</button>
                             </div>
                         </form>
-
                     </div>
                     <div className="prawo">
                         <div className="top">
@@ -38,29 +28,22 @@ function Kontakt (){
                         <div className="mid">
                             <p>Masz pytania dotyczące transportu? Potrzebujesz przewozu osób lub chcesz ustalić szczegóły przejazdu?
                                Skontaktuj się z nami. Chętnie odpowiemy na Twoje pytania i ustalimy szczegóły.</p>
-
                         </div>
                         <div className="bottom">
-                            <div>
+                            <a href="mailto:dariuszdukiewicz@wp.pl"><div>
                                 <img src={email} alt="" />
                                 <p>dariuszdukiewicz@wp.pl</p>
-                            </div>
-                            <div>
+                            </div></a>
+                            <a href=""><div>
                                 <img src={picon} alt="" />
                                 <p>Tel.+48 604-190-948</p>
-                            </div>
-                            <div>
+                            </div></a>
+                            <a href="https://maps.app.goo.gl/xunEhbdxTXCJqSqH9" target="blank"><div>
                                 <img src={map} alt="" />
                                 <p>Mąkolno 72 | 57-250 Złoty Stok</p>
-                            </div>
-                            
-
+                            </div></a>
                         </div>
-
                     </div>
-                    
-                    
-                    
                 </div>
             </div>
         </center>

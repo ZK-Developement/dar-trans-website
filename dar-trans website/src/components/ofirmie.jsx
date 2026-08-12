@@ -3,6 +3,7 @@ import medal1 from "../assets/images/medal1.png"
 import medal2 from "../assets/images/medal2.png"
 import medal3 from "../assets/images/medal3.png"
 import zdj1 from "../assets/images/placeholderzdj1.png"
+import iconw from "../assets/images/dartrans logo redesign-white.svg"
 
 
 
@@ -15,6 +16,7 @@ function Ofirmie (){
                 <div className="idk">
                     <p className="mintestidk">​🇭​​🇮​​🇸​​🇹​​🇴​​🇷​​🇮​​🇦​ ​🇳​​🇦​​🇸​​🇿​​🇪​​🇯​ ​🇫​​🇮​​🇷​​🇲​​🇾​</p>
                     <p className="pnag">O naszej Firmie </p>
+                    <img src={iconw} alt="logo" />
                 </div>
 
                 <div className="blok">

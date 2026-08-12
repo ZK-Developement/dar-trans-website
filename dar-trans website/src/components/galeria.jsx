@@ -1,9 +1,4 @@
-import flotapl from "../assets/images/flota-placeholder.png";
-import ford from "../assets/images/ford.jpg";
-import merc from "../assets/images/merc.jpeg";
-import noge from "../assets/images/noge.jpeg";
-import domino from "../assets/images/domino.jpg";
-import vanhol from "../assets/images/vanholl.jpeg";
+import { useState } from "react";
 
 const galerie = import.meta.glob(
     "../assets/images/album/**/*.{jpg,jpeg,png,webp}",
@@ -16,9 +11,32 @@ const galerie = import.meta.glob(
 const wszystkieZdjecia = Object.values(galerie);
 
 function Galeria() {
+    const [otwarteZdjecie, setOtwarteZdjecie] = useState(null);
+
+    function poprzednieZdjecie() {
+        setOtwarteZdjecie(prev => {
+            if (prev === 0) {
+                return wszystkieZdjecia.length - 1;
+            }
+
+            return prev - 1;
+        });
+    }
+
+    function nastepneZdjecie() {
+        setOtwarteZdjecie(prev => {
+            if (prev === wszystkieZdjecia.length - 1) {
+                return 0;
+            }
+
+            return prev + 1;
+        });
+    }
+
     return (
         <>
             <br id="galeria" />
+
             <center>
                 <div className="main-galeria">
                     <p className="cnag">
@@ -31,6 +49,7 @@ function Galeria() {
                                 key={index}
                                 src={zdjecie}
                                 alt={`Zdjęcie ${index + 1}`}
+                                onClick={() => setOtwarteZdjecie(index)}
                             />
                         ))}
                     </div>
@@ -39,19 +58,64 @@ function Galeria() {
                         <p className="btext">
                             ​🇸​​🇰​​🇴​​🇷​​🇿​​🇾​​🇸​​🇹​​🇦​​🇯​ ​🇿​ ​🇳​​🇦​​🇸​​🇿​​🇪​​🇯​ ​🇴​​🇫​​🇪​​🇷​​🇹​​🇾​
                         </p>
+
                         <p className="cnag">
                             Zarezerwuj przejazd już dziś
                         </p>
+
                         <p className="text">
                             Zadzwoń i umów się już teraz
                         </p>
+
                         <p className="text">
                             Tel.+48 604-190-948
                         </p>
+
                         <button>Kontakt</button>
                     </div>
                 </div>
             </center>
+
+            {otwarteZdjecie !== null && (
+                <div
+                    className="lightbox"
+                    onClick={() => setOtwarteZdjecie(null)}
+                >
+                    <button
+                        className="lightbox-close"
+                        onClick={() => setOtwarteZdjecie(null)}
+                    >
+                        ×
+                    </button>
+
+                    <button
+                        className="lightbox-prev"
+                        onClick={(e) => {
+                            e.stopPropagation();
+                            poprzednieZdjecie();
+                        }}
+                    >
+                        ❮
+                    </button>
+
+                    <img
+                        src={wszystkieZdjecia[otwarteZdjecie]}
+                        alt={`Zdjęcie ${otwarteZdjecie + 1}`}
+                        className="lightbox-image"
+                        onClick={(e) => e.stopPropagation()}
+                    />
+
+                    <button
+                        className="lightbox-next"
+                        onClick={(e) => {
+                            e.stopPropagation();
+                            nastepneZdjecie();
+                        }}
+                    >
+                        ❯
+                    </button>
+                </div>
+            )}
         </>
     );
 }

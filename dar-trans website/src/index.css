@@ -608,12 +608,86 @@ footer
   object-fit: cover;
   border-radius: 2vh;
   cursor: pointer;
-  box-shadow: 0px 0px 2vh rgba(0, 0, 0, 0.112);
+  box-shadow: 0px 0px 3vh rgba(0, 0, 0, 0.229);
   transition: 200ms;
 }
 .galeriamain img:hover{
-  box-shadow: 0px 0px 2vh rgba(0, 0, 0, 0.139);
+  box-shadow: 0px 0px 2vh rgba(0, 0, 0, 0.316);
+  transform: scale(1.01);
+  cursor: zoom-in;
 }
+.lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.689);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-image {
+    max-width: 80vw;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+    position: fixed;
+    border: none;
+    background: none;
+    color: rgb(163, 163, 163);
+    cursor: pointer;
+    z-index: 10000;
+    transition: 100ms;
+}
+.lightbox-close:active,
+.lightbox-prev:active,
+.lightbox-next:active {
+    transform: scale(0.98);
+}
+.lightbox-close:hover,
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    transform: scale(1.01);
+    color: rgb(255, 254, 254);
+}
+
+.lightbox-close {
+    top: 20px;
+    right: 30px;
+    font-size: 4vh;
+}
+
+.lightbox-prev {
+    left: 30px;
+    font-size: 3vh;
+}
+
+.lightbox-next {
+    right: 30px;
+    font-size: 3vh;
+}
+
+.galeriamain img {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .main-polityka
 {
@@ -789,6 +863,11 @@ footer
   center center / cover no-repeat;
   filter: grayscale(50%);
   margin-bottom: 5vh;
+}
+.main-ofirmie .idk img{
+  position: absolute;
+  transform: translateX(-50%) translateY(-40%);
+  height: 50vh;
 }
 .main-ofirmie .blok
 {
@@ -975,6 +1054,7 @@ footer
 }
 .main-kontakt .prawo .mid{
   width: 25vw;
+  font-size: 1.8vh;
 }
 .main-kontakt .prawo .bottom {
   margin-top: 2vh;
@@ -986,7 +1066,7 @@ footer
   border: solid rgba(128, 128, 128, 0.181) 0.2vh;
   border-radius: 2vh;
   padding-left: 2vh;
-  
+  font-size: 1.5vh;
   align-items: center;
   margin-bottom: 2vh;
   box-shadow: 0px 0px 2vh rgba(0, 0, 0, 0.069);
@@ -1008,7 +1088,7 @@ footer
   flex-direction: column;
   gap: 2vh;
   width: 80%;
-  border: rgb(222, 222, 222) solid 1px;
+  border: rgb(222, 222, 222) solid 0.1vh;
   padding: 4vh 3vh 4vh 3vh;
   border-radius: 2vh;
 }
@@ -1016,7 +1096,7 @@ footer
   width: 96%;
   height: 3vh;
   background-color: rgba(255, 255, 255, 0);
-  border: rgb(199, 199, 199) solid 1px;
+  border: rgb(199, 199, 199) solid 0.1vh;
   padding-left: 2vh;
   padding-top: 1vh;
   padding-bottom: 1vh;
@@ -1029,19 +1109,28 @@ footer
   width: 100%;
   height: 5.5vh;
   background-color: rgba(255, 255, 255, 0);
-  border: rgb(199, 199, 199) solid 1px;
+  border: rgb(199, 199, 199) solid 0.1vh;
   padding-left: 2vh;
   padding-top: 1vh;
   padding-bottom: 1vh;
   border-radius: 1vh;
   color: gray;
+  font-size: 1.8vh;
 }
 .main-kontakt textarea { height: 10vh; resize: none; }
 .main-kontakt form input::placeholder { color: gray;}
 .main-kontakt form textarea::placeholder { color: gray;}
 .main-kontakt form select::placeholder { color: gray;}
 .main-kontakt option{
-  border: rgb(199, 199, 199) solid 1px;
+  border: rgb(199, 199, 199) solid 0.1vh;
+}
+.main-kontakt button{
+  background-color: black;
+  height: 5vb;
+  border-radius: 1.5vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  font-size: 1.8vh;
 }
 
 
