@@ -11,11 +11,10 @@ function Header ()
             <header>
                 <a href="https://dar-trans.vercel.app/">
                 <div className="flex">
-                    <img src={icon} alt="icon" />
-                    <div>
+                    <img src={icon} alt="icon" id="logo-dartrans"/>
+                    <div id="dar-trans-info">
                         <p className="pnag">DAR-TRANS</p>
                         <p className="text">Zakład Usług Transportowych DAR-TRANS Dariusz Dukiewicz</p>
-
                     </div>
                 </div>
                 </a>

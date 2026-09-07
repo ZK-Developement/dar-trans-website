@@ -4,10 +4,14 @@ import medal2 from "../assets/images/medal2.png"
 import medal3 from "../assets/images/medal3.png"
 import zdj1 from "../assets/images/placeholderzdj1.png"
 import iconw from "../assets/images/dartrans logo redesign-white.svg"
-
-
+import wizytowka from "../assets/images/wizytowka.png"
+import dlaczego from "../assets/images/dlaczego.jpg"
+import { Link, useNavigate } from "react-router-dom"
 
 function Ofirmie (){
+
+    const nav = useNavigate()
+
     return(
         <>
             <br  id="ofirmie"/>
@@ -21,7 +25,7 @@ function Ofirmie (){
 
                 <div className="blok">
                     <div className="obraz">
-                        <img src={zdj1} id="lewo"/>
+                        <img src={wizytowka} id="lewo"/>
                     </div>
                     <div className="treść">
                         <p className="nag">Poznaj nas bliżej</p>
@@ -34,9 +38,9 @@ function Ofirmie (){
                     <div className="medale">
                         <p className="naglow">​🇯​​🇪​​🇸​​🇹​​🇪​​🇸​​🇲​​🇾​ ​🇬​​🇴​​🇩​​🇳​​🇮​ ​🇿​​🇦​​🇺​​🇫​​🇦​​🇳​​🇮​​🇦​</p>
                         <div className="tresc">
-                            <img src={medal1}/>
-                            <img src={medal2}/>
-                            <img src={medal3}/>
+                            <div className="medal"><img src={medal1}/></div>
+                            <div className="medal"><img src={medal2}/></div>
+                            <div className="medal"><img src={medal3}/></div>
                         </div>
                     </div>
                 </div>
@@ -48,7 +52,7 @@ function Ofirmie (){
                         <p className="mid">Do każdego klienta podchodzimy indywidualnie, co sprawia, że idealnie dostosujemy się do waszych potrzeb.</p>
                     </div>
                     <div className="obraz">
-                        <img src={zdj1} id="prawo"/>
+                        <img src={dlaczego} id="prawo"/>
                     </div>
                 </div>
                 <div className="blokopinie">
@@ -75,13 +79,14 @@ function Ofirmie (){
                 <div className="zarezerwuj">
                     <p className="btext">​🇸​​🇰​​🇴​​🇷​​🇿​​🇾​​🇸​​🇹​​🇦​​🇯​ ​🇿​ ​🇳​​🇦​​🇸​​🇿​​🇪​​🇯​ ​🇴​​🇫​​🇪​​🇷​​🇹​​🇾​</p>
                     <p className="cnag">Zarezerwuj przejazd już dziś</p>
-                    <p className="text">Zadzwoń i umów się już teraz</p>
+                    <p className="text">Zadzwoń i dowiedz się więcej informacji</p>
                     <p className="text">Tel.+48 604-190-948</p>
-                    <button>Kontakt</button>
-                    
-
+                    <button onClick={() => {
+                        nav("/Kontakt")
+                        setTimeout(() => {
+                            document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" })
+                        }, 100)}}>Kontakt</button>
                 </div>
-                
             </div>
         </center>
         </>

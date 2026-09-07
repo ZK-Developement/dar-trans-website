@@ -1,8 +1,12 @@
 import picon from "../assets/images/phoneicon.png"
 import email from "../assets/images/emailicon.png"
 import map from "../assets/images/mapicon.png"
+import { Link, useNavigate } from "react-router-dom"
 
 function Kontakt (){
+    
+    const nav = useNavigate()
+
     return(
         <>
         <br id="kontakt" />

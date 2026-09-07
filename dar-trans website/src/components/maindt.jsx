@@ -1,7 +1,7 @@
 import autokar1 from "../assets/images/autokar1.svg"
 import icon from "../assets/images/logodt.svg"
 import iconw from "../assets/images/dartrans logo redesign-white.svg"
-import polska from "../assets/images/polska.svg"
+import polska from "../assets/images/mapa.jpg"
 import coachph from "../assets/images/coachplaceholder.svg"
 import mercedes from "../assets/images/merc.jpeg"
 import noge from "../assets/images/noge.jpeg"
@@ -13,10 +13,15 @@ import medal from "../assets/images/medal.png"
 import picon from "../assets/images/phoneicon.png"
 import staricon from "../assets/images/staricon.png"
 import expicon from "../assets/images/expicon.png"
+import krzesla from "../assets/images/onasplaceholder.jpg"
 import zdj1 from "../assets/images/placeholderzdj1.png"
 import { Link, useNavigate } from "react-router-dom"
 
+
 function Maindt (){
+
+    const nav = useNavigate()
+
     return(
         <>
         <center>
@@ -25,7 +30,7 @@ function Maindt (){
                 <div className="onas-glowna">
                     <div className="lewo">
                         <div className="onas-firma">
-                            <img src={iconw} alt="logofirmy" />
+                            <img src={iconw} alt="logofirmy" id="logo"/>
                         </div>
                         <br id="oferta"/>
                         <div className="info1">
@@ -33,25 +38,22 @@ function Maindt (){
                                 <img src={picon}/>
                                 <div>
                                     <p className="infohtext">​​🇸​​🇰​​🇴​​🇳​​🇹​​🇦​​🇰​​🇹​​🇺​​🇯​ ​🇸​​🇮​​🇪​ ​🇿​ ​🇳​​🇦​​🇲​​🇮​​</p>
-                                    <p className="infoltext">Tel.+48 604-190-948</p>
+                                    <a href="tel:+48604190948"><p className="infoltext">Tel.+48 604-190-948</p></a>
                                 </div>
-                                
                             </div>
-                            <div className="info">
+                            <a target="blank" href="https://www.google.com/maps/place/Zak%C5%82ad+Us%C5%82ug+Transportowych+DAR-TRANS+Dariusz+Dukiewicz/@50.4487475,16.8433669,1972m/data=!3m1!1e3!4m8!3m7!1s0x470e1f5486d99e15:0x96b773556315c8c!8m2!3d50.4506663!4d16.8394131!9m1!1b1!16s%2Fg%2F11b6gm85_w?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D"><div className="info">
                                 <img src={staricon}/>
                                 <div>
                                     <p className="infohtext">​🇯​​🇦​​🇰​​🇴​​🇸​​🇨​ ​🇺​​🇸​​🇱​​🇺​​🇬​</p>
                                     <p className="infoltext">4.8 Oceny klientów</p>
                                 </div>
-                                
-                            </div>
+                            </div></a>
                             <div className="info">
                                 <img src={expicon}/>
                                 <div>
                                     <p className="infohtext">​🇩​​🇴​​🇸​​🇼​​🇮​​🇦​​🇩​​🇨​​🇿​​🇪​​🇳​​🇮​​🇪​</p>
                                     <p className="infoltext">Ponad 20 lat doświadczenia</p>
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
@@ -62,7 +64,7 @@ function Maindt (){
                     <br />
                     <div className="oferta-dol">
                         <div className="xdxd">
-                            <img src={zdj1} />
+                            <img src={mercedes} id="merc"/>
                             <div className="prawo">
                                 <p className="nag">Jesteśmy tu specjalnie dla Ciebie.</p>
                                 <br />
@@ -83,9 +85,8 @@ function Maindt (){
                                 <br />
                                 <p className="text">Zapewniamy sprawny kontakt oraz jasne warunki współpracy, a proces rezerwacji jest szybki i przejrzysty.</p>
                             </div>
-                            <img src={zdj1} />
+                            <img src={krzesla} id="krzesla"/>
                         </div>
-                        
                     </div>
                 </div>
                 <div className="onas-dol">
@@ -97,27 +98,30 @@ function Maindt (){
                             <p className="">W ofercie posiadamy zarówno duże autokary turystyczne 55-cio osobowe jak i mniejsze 35-cio, 20-sto osobowe jak i busy 8-mio osobowe. Nasze samochody są klimatyzowane i wygodne, posiadają pakowne luki bagażowe, ale najważniejsze, że zawsze bezpiecznie dowiozą was tam, i z powrotem.</p>
                             <p className="">Każdy klient rozliczany jest indywidualnie, przy dłuższej współpracy proponujemy atrakcyjne warunki. </p>
                         </div >
-                        
                     </div>
                 </div>
                 <div className="idk">
                     <p className="mintestidk">​🇸​​🇰​​🇴​​🇳​​🇹​​🇦​​🇰​​🇹​​🇺​​🇯​ ​🇸​​🇮​​🇪​ ​🇿​ ​🇳​​🇦​​🇲​​🇮​​</p>
                     <p className="pnag">Skontaktuj się z nami aby dowiedzieć się więcej o naszych usługach.​</p>
-                    <button>Kontakt</button>
+                    <button onClick={() => {
+                        nav("/Kontakt")
+                        setTimeout(() => {
+                            document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" })
+                        }, 100)}}>Kontakt</button>
                 </div>
                 <div className="zarezerwuj">
                     <p className="btext">​🇸​​🇰​​🇴​​🇷​​🇿​​🇾​​🇸​​🇹​​🇦​​🇯​ ​🇿​ ​🇳​​🇦​​🇸​​🇿​​🇪​​🇯​ ​🇴​​🇫​​🇪​​🇷​​🇹​​🇾​</p>
                     <p className="cnag">Zarezerwuj przejazd już dziś</p>
-                    <p className="text">Zadzwoń i umów się już teraz</p>
+                    <p className="text">Zadzwoń i dowiedz się więcej informacji</p>
                     <p className="text">Tel.+48 604-190-948</p>
-                    <button>Kontakt</button>
-                    
-
+                    <button onClick={() => {
+                        nav("/Kontakt")
+                        setTimeout(() => {
+                            document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" })
+                        }, 100)}}>Kontakt</button>
                 </div>
-
             </main>
         </center>
-            
         </>
     );
 }

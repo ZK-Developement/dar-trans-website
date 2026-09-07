@@ -3,3 +3,10 @@
   padding: 0;
   text-align: left;
 }
+body {
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}

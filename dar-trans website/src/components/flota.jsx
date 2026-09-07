@@ -6,6 +6,7 @@ import merc from "../assets/images/merc.jpeg";
 import noge from "../assets/images/noge.jpeg";
 import domino from "../assets/images/domino.jpg";
 import vanhol from "../assets/images/vanholl.jpeg";
+import { Link, useNavigate } from "react-router-dom"
 
 const galerie = import.meta.glob(
     "../assets/images/album/**/*.{jpg,jpeg,png,webp}",
@@ -22,6 +23,9 @@ function getGaleria(nazwa) {
 }
 
 function Flota() {
+
+    const nav = useNavigate()
+
     const [duzeZdjecia, setDuzeZdjecia] = useState({
         TRANSIT: ford,
         SPRINTER: merc,
@@ -29,6 +33,8 @@ function Flota() {
         DOMINO: domino,
         VANHOOL: vanhol
     });
+
+    
 
     return (
         <>
@@ -47,7 +53,6 @@ function Flota() {
                             </p>
                         </div>
 
-                        {/* TRANSIT */}
                         <div className="autokar-div">
                             <div className="prawo">
                                 <div className="dd1">
@@ -101,7 +106,6 @@ function Flota() {
                             </div>
                         </div>
 
-                        {/* SPRINTER */}
                         <div className="autokar-div">
                             <div className="prawo">
                                 <div className="dd1">
@@ -156,7 +160,6 @@ function Flota() {
                             </div>
                         </div>
 
-                        {/* NOGE */}
                         <div className="autokar-div">
                             <div className="prawo">
                                 <div className="dd1">
@@ -211,7 +214,6 @@ function Flota() {
                             </div>
                         </div>
 
-                        {/* DOMINO */}
                         <div className="autokar-div">
                             <div className="prawo">
                                 <div className="dd1">
@@ -266,7 +268,6 @@ function Flota() {
                             </div>
                         </div>
 
-                        {/* VANHOOL */}
                         <div className="autokar-div">
                             <div className="prawo">
                                 <div className="dd1">
@@ -326,9 +327,13 @@ function Flota() {
                                 ​🇸​​🇰​​🇴​​🇷​​🇿​​🇾​​🇸​​🇹​​🇦​​🇯​ ​🇿​ ​🇳​​🇦​​🇸​​🇿​​🇪​​🇯​ ​🇴​​🇫​​🇪​​🇷​​🇹​​🇾​
                             </p>
                             <p className="cnag">Zarezerwuj przejazd już dziś</p>
-                            <p className="text">Zadzwoń i umów się już teraz</p>
+                            <p className="text">Zadzwoń i dowiedz się więcej informacji</p>
                             <p className="text">Tel.+48 604-190-948</p>
-                            <button>Kontakt</button>
+                            <button onClick={() => {
+                                nav("/Kontakt")
+                                setTimeout(() => {
+                                    document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" })
+                                }, 100)}}>Kontakt</button>
                         </div>
 
                     </center>

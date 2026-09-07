@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom"
 
 const galerie = import.meta.glob(
     "../assets/images/album/**/*.{jpg,jpeg,png,webp}",
@@ -32,6 +33,9 @@ function Galeria() {
             return prev + 1;
         });
     }
+    
+    const nav = useNavigate()
+
 
     return (
         <>
@@ -64,14 +68,18 @@ function Galeria() {
                         </p>
 
                         <p className="text">
-                            Zadzwoń i umów się już teraz
+                            Zadzwoń i dowiedz się więcej informacji
                         </p>
 
                         <p className="text">
                             Tel.+48 604-190-948
                         </p>
 
-                        <button>Kontakt</button>
+                        <button onClick={() => {
+                        nav("/Kontakt")
+                        setTimeout(() => {
+                            document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" })
+                        }, 100)}}>Kontakt</button>
                     </div>
                 </div>
             </center>

@@ -363,14 +363,14 @@ footer
 .onas-dol
 {
   padding: 5vh;
+  margin-top: 5vh;
 }
 .onas-glowna .prawo img { transform: scale(1.2) translateX(-6vh); transition: 200ms;}
 .onas-firma { justify-content: center;align-content: center; margin-top: 5vh; height: 50vh;}
 .onas-firma img {height: 24vh;transform: scale(3); margin: 0;}
 .onas-dol-linia { width: 50vh; float: left; margin-left: 1.5vh; margin-bottom: 0vh;}
 .onas-dol-dol { display: flex; text-align: left; margin-top: 0vh; justify-content: center; gap: 20vh;}
-.onas-dol-dol .polska { height: 30vh; transform: scale(2) translateY(4vh); transition: 200ms;}
-.onas-dol-dol .polska:hover { transform: scale(2.05)translateY(4vh)}
+.onas-dol-dol .polska { height: 30vh; transform: scale(1.7) translateY(4vh) translateX(4vh); transition: 200ms;}
 .onas-dol-dol .lewo{ padding: 5vh; align-content: center; width: 80vh; font-size: 2.3vh;}
 .onas-dol-dol .prawo { background-color: rgba(255, 0, 0, 0); width: 60vh; justify-content: center; align-content: center;}
 .onas-dol-dol .prawo .medale { height: 15vh; }
@@ -521,14 +521,22 @@ footer
 .xdxd {
   transform:  translateY(-8vh);
   display: flex;
-  gap: 20vh;
-  padding-left: 20vh; 
+  gap: 10vh;
+  padding-left: 8vh; 
   padding-right: 20vh;
 }
 .xdxd .prawo {justify-content: center; align-content: center;}
 .xdxd .text { font-size: 2.3vh;}
-.xdxd img { height: 40vh;transition: 200ms;}
-.xdxd img:hover { transform: scale(1.04) translateY(-1vh);}
+.xdxd img { 
+  height: 40vh;
+  transition: 200ms;
+  border-radius: 1.5vh;
+  object-fit: cover;
+  width: 40vh;
+  filter: brightness(110%);
+  box-shadow: 0px 0px 2vh rgba(0, 0, 0, 0.281);
+}
+
 .oferta-linia
 {
   width: 98vh;
@@ -856,12 +864,12 @@ footer
 .main-ofirmie .idk
 {
   border-radius: 2vh;
-   background: 
+  background: 
   linear-gradient(rgba(255, 255, 255, 0.242),rgba(0, 0, 0, 0.24),rgba(0, 0, 0, 0.202),rgba(255, 255, 255, 0.335),
   rgb(255, 255, 255)),
   url(/galeria.jpg) 
   center center / cover no-repeat;
-  filter: grayscale(50%);
+  filter: grayscale(25%);
   margin-bottom: 5vh;
 }
 .main-ofirmie .idk img{
@@ -884,10 +892,8 @@ footer
 }
 .main-ofirmie .blok .obraz #lewo{
   height: 50vh;
-  width: 30vw;
   object-fit: cover;
   border-radius: 2vh;
-  box-shadow: 0vh 0vh 3vh  rgba(0, 0, 0, 0.15);
   float: left;
 }
 .main-ofirmie .blok .obraz #prawo{
@@ -896,6 +902,7 @@ footer
   object-fit: cover;
   border-radius: 2vh;
   box-shadow: 0vh 0vh 3vh  rgba(0, 0, 0, 0.15);
+  transform: scale(0.9);
   float: right;
 }
 .main-ofirmie .blok .treść
@@ -910,14 +917,12 @@ footer
 
 .medale{
   display: flex;
-  width: 50vw;
+  width: 55vw;
   height: 30vh;
   border-radius: 2vh;
   border: rgba(0, 0, 0, 0) solid 1.3vh;
   margin-top: 15vh;
-  box-shadow: 0px 0px 6vh rgba(255, 255, 255, 0.453);
   margin-bottom: 10vh;
-  background-color: rgb(255, 255, 255);
 }
 .opinie
 {
@@ -967,10 +972,13 @@ footer
   border-radius: 2vh;
   box-shadow: 0px 0px 2vh rgba(0, 0, 0, 0.151) ;
 }
+.blokopinie .btext { font-size: 2vh;}
+.blokopinie .mid {font-size: 1.7vh;}
+
 .opinie .btext { margin: 0; }
 .naglow{
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.766);
+  background-color: rgba(255, 255, 255, 0.918);
   color: black;
   padding-left: 6vh;
   padding-right: 6vh;
@@ -979,8 +987,8 @@ footer
   font-size: 2.5vh;
   font-weight: 600;
   border-radius: 20vh;
-  transform: translateY(-10vh) translateX(32vh);
-  box-shadow: 0px 0px 3vh rgba(252, 252, 252, 0.31);
+  transform: translateY(-10vh) translateX(100%);
+  box-shadow: 0px 0px 3vh rgba(252, 252, 252, 0.176);
   justify-content: center;
   align-items: center;
   display: flex;
@@ -991,20 +999,18 @@ footer
   align-items: center;
   gap: 2vh;
   width: 70vw;
-  padding-left: 10vh;
-  padding-right: 10vh;
+}
+.medal{
+  background-color: rgb(255, 255, 255);
+  border-radius: 2vh;
+  padding: 5vh 4vh;
+  margin: 2vh;
+  box-shadow: 0px 0px 5vh rgba(255, 255, 255, 0.453);
+  filter: grayscale(200%);
 }
 .tresc img{
   height: 20vh;
 }
-
-
-
-
-
-
-
-
 
 .main-kontakt
 {
@@ -1203,4 +1209,145 @@ footer
   border-radius: 1vh;
   filter: grayscale(0%) opacity(100%);
   transform: scale(1.01) translateY(-0.2vh);
+}
+#dar-trans-info{
+  display: block;
+}
+#logo{
+  transform: scale(3);
+}
+
+
+
+@media (max-width: 1410px) {
+    #dar-trans-info {
+        display: none;
+    }
+    header a{
+      transform: translateY(-1vh);
+    }
+    .onas-dol-dol .polska {
+      transform: translateX(10vh)translateY(50%) scale(1.4);
+    }
+    .autokar-div {
+      gap: 5vh;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 0;
+      padding-right: 0;
+      width: 90%;
+    }
+    .medale{
+      width: 80%;
+    }
+    .opinie .btext {font-size: 1.7vh;}
+    .opinie .mid {font-size: 1.6vh;}
+    .blok .obraz #lewo { height: 50vh;transform: scale(0.8) translateX(-15vh);}
+    .galeriamain{
+      margin-top: 2vh;
+      width: 80%;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 3vh;
+    }
+}
+@media (max-width: 768px) {
+    header {
+      height: 5vh;
+      width: 84vw;
+      border-radius: 3vh;
+      justify-content: space-between;
+      padding-left: 1vh;
+      padding-right: 1vh;
+    }
+    #logo-dartrans{
+      transform: scale(1.5) translateY(10%);
+   
+    }
+    nav {
+      display: none;
+    }
+    .main-onas{
+
+      margin: 2vh;
+      margin-top: 8vh;
+    }
+    .info1{
+      display: block;
+      height: auto;
+      padding-top: 1vh;
+      padding-bottom: 1vh;
+      margin: 0;
+      width: 30vh;
+      padding-left: 2vh;
+      padding-right: 2vh;
+      transform: translateY(-25vh);
+    }
+    .info1:hover {
+      transform: translateY(-25vh);
+    }
+    .info1 .info { margin-top: 1vh; margin-bottom: 1vh;}
+
+    .infohtext,.infoltext{
+      font-size: 1.7vh;
+    }
+    .onas-glowna{ height: 60vh;}
+    #logo { transform: scale(1.1) translateY(-10vh);}
+    #merc { display: none;}
+    #krzesla { display: none;}
+    .xdxd{
+      margin: 0;
+      margin-right: 8vh;
+      padding: 0;
+    }
+    .oferta-dol{
+      margin-bottom: 6vh;
+    }
+    .xdxd .nag{ font-size: 2vh;}
+    .xdxd .text{ font-size: 1.5vh;}
+    .onas-dol-dol .nag{ font-size: 2vh;margin: 0;;}
+    .onas-dol-dol p{ font-size: 1.5vh; margin: 0;}
+    .polska { display: none;}
+    .onas-dol{
+      padding: 0;
+      margin: 0;
+    }
+    .oferta {
+      height:70vh;
+    }
+    .idk {
+       margin-top: 0;
+    }
+    .idk .mintestidk { font-size: 2vh;}
+    .idk .pnag { font-size: 2vh; margin: 0;
+    margin-top: 2vh;}
+    .idk button { transform: translateY(-2vh);}
+    .idk button:hover { transform: translateY(-2vh);}
+    .footerh{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      gap: 1vh;
+      margin-left: 5vh;
+      margin-right: 45vh;
+      width: 40vh;
+      height: 80vh;
+    }
+    .footerh .lista{
+      width: 30vh;
+    }
+    footer{
+      height: 90vh;
+    }
+    .footer{
+      height: 10vh;
+    }
+    .wpz{
+      display: block;
+      justify-content: center;
+      align-items: center;
+      height: 10vh;
+    }
+    .adzk{
+      justify-content: center;
+    }
 }
