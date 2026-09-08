@@ -13,7 +13,7 @@ function Footer (){
                     <div className="footerh">
                         
                         <div className="lista">
-                            <p>​🇰​​🇴​​🇳​​🇹​​🇦​​🇰​​🇹​</p>
+                            <p>KONTAKT</p>
                             <ul className="listal">
                                 <a href="" className=""><li className="li">Tel.+48 604-190-948</li></a>
                                 <a href="mailto:dariuszdukiewicz@wp.pl" className=""><li className="li">e-mail.dariuszdukiewicz@wp.pl</li></a>
@@ -23,7 +23,7 @@ function Footer (){
                             </ul>
                         </div>
                         <div className="lista">
-                            <p>​​🇭​​🇦​​🇸​​🇱​​🇦​ ​🇸​​🇹​​🇷​​🇴​​🇳​​🇾​​</p>
+                            <p>HASŁA STRONY</p>
                             <ul className="listal">
                                 <li>Autokary Dolny Śląsk</li>
                                 <li>Przewoźnik </li>
@@ -36,7 +36,7 @@ function Footer (){
                             </ul>
                         </div>
                         <div className="lista">
-                            <p>​🇵​​🇴​​🇩​​🇸​​🇹​​🇷​​🇴​​🇳​​🇾​​</p>
+                            <p>​PODSTRONY</p>
                             <ul className="listal">
                                 <li className="li"
                                     onClick={() => {

@@ -37,21 +37,21 @@ function Maindt (){
                             <div className="info">
                                 <img src={picon}/>
                                 <div>
-                                    <p className="infohtext">​​🇸​​🇰​​🇴​​🇳​​🇹​​🇦​​🇰​​🇹​​🇺​​🇯​ ​🇸​​🇮​​🇪​ ​🇿​ ​🇳​​🇦​​🇲​​🇮​​</p>
+                                    <p className="infohtext">SKONTAKTUJ SIĘ Z NAMI</p>
                                     <a href="tel:+48604190948"><p className="infoltext">Tel.+48 604-190-948</p></a>
                                 </div>
                             </div>
                             <a target="blank" href="https://www.google.com/maps/place/Zak%C5%82ad+Us%C5%82ug+Transportowych+DAR-TRANS+Dariusz+Dukiewicz/@50.4487475,16.8433669,1972m/data=!3m1!1e3!4m8!3m7!1s0x470e1f5486d99e15:0x96b773556315c8c!8m2!3d50.4506663!4d16.8394131!9m1!1b1!16s%2Fg%2F11b6gm85_w?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D"><div className="info">
                                 <img src={staricon}/>
                                 <div>
-                                    <p className="infohtext">​🇯​​🇦​​🇰​​🇴​​🇸​​🇨​ ​🇺​​🇸​​🇱​​🇺​​🇬​</p>
+                                    <p className="infohtext">​JAKOŚĆ USŁUG​</p>
                                     <p className="infoltext">4.8 Oceny klientów</p>
                                 </div>
                             </div></a>
                             <div className="info">
                                 <img src={expicon}/>
                                 <div>
-                                    <p className="infohtext">​🇩​​🇴​​🇸​​🇼​​🇮​​🇦​​🇩​​🇨​​🇿​​🇪​​🇳​​🇮​​🇪​</p>
+                                    <p className="infohtext">DOŚWIADCZENIE</p>
                                     <p className="infoltext">Ponad 20 lat doświadczenia</p>
                                 </div>
                             </div>
@@ -101,7 +101,7 @@ function Maindt (){
                     </div>
                 </div>
                 <div className="idk">
-                    <p className="mintestidk">​🇸​​🇰​​🇴​​🇳​​🇹​​🇦​​🇰​​🇹​​🇺​​🇯​ ​🇸​​🇮​​🇪​ ​🇿​ ​🇳​​🇦​​🇲​​🇮​​</p>
+                    <p className="mintestidk">SKONTAKTUJ SIĘ Z NAMI</p>
                     <p className="pnag">Skontaktuj się z nami aby dowiedzieć się więcej o naszych usługach.​</p>
                     <button onClick={() => {
                         nav("/Kontakt")
@@ -110,7 +110,7 @@ function Maindt (){
                         }, 100)}}>Kontakt</button>
                 </div>
                 <div className="zarezerwuj">
-                    <p className="btext">​🇸​​🇰​​🇴​​🇷​​🇿​​🇾​​🇸​​🇹​​🇦​​🇯​ ​🇿​ ​🇳​​🇦​​🇸​​🇿​​🇪​​🇯​ ​🇴​​🇫​​🇪​​🇷​​🇹​​🇾​</p>
+                    <p className="btext">SKORZYSTAJ Z NASZEJ OFEERTY</p>
                     <p className="cnag">Zarezerwuj przejazd już dziś</p>
                     <p className="text">Zadzwoń i dowiedz się więcej informacji</p>
                     <p className="text">Tel.+48 604-190-948</p>

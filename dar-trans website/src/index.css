@@ -1216,6 +1216,9 @@ footer
 #logo{
   transform: scale(3);
 }
+.lista p {
+  font-size: 1.2vh;
+}
 
 
 
@@ -1288,9 +1291,13 @@ footer
     }
     .info1 .info { margin-top: 1vh; margin-bottom: 1vh;}
 
-    .infohtext,.infoltext{
+    .infoltext{
       font-size: 1.7vh;
     }
+    .infohtext{
+      font-size: 1.2vh;
+    }
+
     .onas-glowna{ height: 60vh;}
     #logo { transform: scale(1.1) translateY(-10vh);}
     #merc { display: none;}
@@ -1330,24 +1337,44 @@ footer
       margin-left: 5vh;
       margin-right: 45vh;
       width: 40vh;
-      height: 80vh;
+      height: 73vh;
+      padding-top: 5vh;
+      padding-bottom: 1vh;
     }
     .footerh .lista{
       width: 30vh;
     }
     footer{
-      height: 90vh;
+      height: 85vh;
     }
     .footer{
-      height: 10vh;
+      height: 7vh;
     }
     .wpz{
       display: block;
       justify-content: center;
       align-items: center;
-      height: 10vh;
+      height: 9vh;
     }
     .adzk{
       justify-content: center;
     }
+    .lista p {
+      margin-left: 1vh;
+    }
+    .idk .mintestidk{
+      font-size: 1.4vh;
+      font-weight: 600;
+      color: white;
+    }
+    .idk { height: 30vh;}
+    .idk button {
+      margin-top: 15vh;
+      margin-left: 6vh;
+      color: white;
+    }
+    .idk button a {
+      color: white;
+    }
+   
 }
