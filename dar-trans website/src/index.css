@@ -1258,7 +1258,7 @@ button a { color: white;}
 @media (max-width: 768px) {
     header {
       height: 5vh;
-      width: 84vw;
+      width: 85vw;
       border-radius: 3vh;
       justify-content: space-between;
       padding-left: 1vh;
