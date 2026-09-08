@@ -40,10 +40,8 @@ function Flota() {
         <>
             <center>
                 <br id="flota" />
-
                 <div className="main-flota">
                     <center>
-
                         <div className="idk">
                             <p className="mintestidk">
                                 ​🇳​​🇦​​🇸​​🇿​​🇦​ ​🇫​​🇱​​🇴​​🇹​​🇦​​​
@@ -52,13 +50,11 @@ function Flota() {
                                 Zobacz co oferuje nasza Firma.​
                             </p>
                         </div>
-
                         <div className="autokar-div">
                             <div className="prawo">
                                 <div className="dd1">
                                     <p className="btext">01.</p>
                                 </div>
-
                                 <div className="flex">
                                     <div className="d1">
                                         <p className="pnag">
@@ -68,7 +64,6 @@ function Flota() {
                                         <p className="textl">Norma emisji spalin: EURO VI</p>
                                         <p className="textl">Rok produkcji: 2017</p>
                                     </div>
-
                                     <div className="d1">
                                         <p className="pnag">​​🇴​​🇵​​🇮​​🇸​​</p>
                                         <p className="textl">
@@ -89,29 +84,32 @@ function Flota() {
                                                 src={zdjecie}
                                                 alt={`Transit ${index + 1}`}
                                                 className="galimg"
-                                                onClick={() =>
+                                                onClick={() => {
                                                     setDuzeZdjecia(prev => ({
                                                         ...prev,
                                                         TRANSIT: zdjecie
                                                     }))
-                                                }
+                                                    nav("/Galeria")
+                                                    setTimeout(() => {
+                                                        document
+                                                            .getElementById("galeria")
+                                                            ?.scrollIntoView({ behavior: "smooth" })
+                                                    }, 100)
+                                                }}
                                             />
                                         ))}
                                     </div>
                                 </center>
                             </div>
-
                             <div className="lewo">
                                 <img src={duzeZdjecia.TRANSIT} alt="Ford Transit" />
                             </div>
                         </div>
-
                         <div className="autokar-div">
                             <div className="prawo">
                                 <div className="dd1">
                                     <p className="btext">02.</p>
                                 </div>
-
                                 <div className="flex">
                                     <div className="d1">
                                         <p className="pnag">
@@ -121,7 +119,6 @@ function Flota() {
                                         <p className="textl">Norma emisji spalin: EURO VI</p>
                                         <p className="textl">Rok produkcji: 2017</p>
                                     </div>
-
                                     <div className="d1">
                                         <p className="pnag">​​🇴​​🇵​​🇮​​🇸​​</p>
                                         <p className="textl">
@@ -134,38 +131,40 @@ function Flota() {
                                         </p>
                                     </div>
                                 </div>
-
                                 <center>
                                     <div className="galeria">
                                         {getGaleria("SPRINTER").map((zdjecie, index) => (
                                             <img
                                                 key={index}
                                                 src={zdjecie}
-                                                alt={`Sprinter ${index + 1}`}
+                                                alt={`SPRINTER ${index + 1}`}
                                                 className="galimg"
-                                                onClick={() =>
+                                                onClick={() => {
                                                     setDuzeZdjecia(prev => ({
                                                         ...prev,
-                                                        SPRINTER: zdjecie
+                                                        TRANSIT: zdjecie
                                                     }))
-                                                }
+                                                    nav("/Galeria")
+                                                    setTimeout(() => {
+                                                        document
+                                                            .getElementById("galeria")
+                                                            ?.scrollIntoView({ behavior: "smooth" })
+                                                    }, 100)
+                                                }}
                                             />
                                         ))}
                                     </div>
                                 </center>
                             </div>
-
                             <div className="lewo">
                                 <img src={duzeZdjecia.SPRINTER} alt="Mercedes Sprinter" />
                             </div>
                         </div>
-
                         <div className="autokar-div">
                             <div className="prawo">
                                 <div className="dd1">
                                     <p className="btext">03.</p>
                                 </div>
-
                                 <div className="flex">
                                     <div className="d1">
                                         <p className="pnag">
@@ -175,7 +174,6 @@ function Flota() {
                                         <p className="textl">Norma emisji spalin: EURO VI</p>
                                         <p className="textl">Rok produkcji: 2017</p>
                                     </div>
-
                                     <div className="d1">
                                         <p className="pnag">​​🇴​​🇵​​🇮​​🇸​​</p>
                                         <p className="textl">
@@ -188,38 +186,40 @@ function Flota() {
                                         </p>
                                     </div>
                                 </div>
-
                                 <center>
                                     <div className="galeria">
                                         {getGaleria("NOGE").map((zdjecie, index) => (
                                             <img
                                                 key={index}
                                                 src={zdjecie}
-                                                alt={`Noge ${index + 1}`}
+                                                alt={`NOGE ${index + 1}`}
                                                 className="galimg"
-                                                onClick={() =>
+                                                onClick={() => {
                                                     setDuzeZdjecia(prev => ({
                                                         ...prev,
-                                                        NOGE: zdjecie
+                                                        TRANSIT: zdjecie
                                                     }))
-                                                }
+                                                    nav("/Galeria")
+                                                    setTimeout(() => {
+                                                        document
+                                                            .getElementById("galeria")
+                                                            ?.scrollIntoView({ behavior: "smooth" })
+                                                    }, 100)
+                                                }}
                                             />
                                         ))}
                                     </div>
                                 </center>
                             </div>
-
                             <div className="lewo">
                                 <img src={duzeZdjecia.NOGE} alt="Irisbus Noge" />
                             </div>
                         </div>
-
                         <div className="autokar-div">
                             <div className="prawo">
                                 <div className="dd1">
                                     <p className="btext">04.</p>
                                 </div>
-
                                 <div className="flex">
                                     <div className="d1">
                                         <p className="pnag">
@@ -229,7 +229,6 @@ function Flota() {
                                         <p className="textl">Norma emisji spalin: EURO VI</p>
                                         <p className="textl">Rok produkcji: 2017</p>
                                     </div>
-
                                     <div className="d1">
                                         <p className="pnag">​​🇴​​🇵​​🇮​​🇸​​</p>
                                         <p className="textl">
@@ -242,38 +241,40 @@ function Flota() {
                                         </p>
                                     </div>
                                 </div>
-
                                 <center>
                                     <div className="galeria">
                                         {getGaleria("DOMINO").map((zdjecie, index) => (
                                             <img
                                                 key={index}
                                                 src={zdjecie}
-                                                alt={`Domino ${index + 1}`}
+                                                alt={`DOMINO ${index + 1}`}
                                                 className="galimg"
-                                                onClick={() =>
+                                                onClick={() => {
                                                     setDuzeZdjecia(prev => ({
                                                         ...prev,
-                                                        DOMINO: zdjecie
+                                                        TRANSIT: zdjecie
                                                     }))
-                                                }
+                                                    nav("/Galeria")
+                                                    setTimeout(() => {
+                                                        document
+                                                            .getElementById("galeria")
+                                                            ?.scrollIntoView({ behavior: "smooth" })
+                                                    }, 100)
+                                                }}
                                             />
                                         ))}
                                     </div>
                                 </center>
                             </div>
-
                             <div className="lewo">
                                 <img src={duzeZdjecia.DOMINO} alt="Irisbus Domino" />
                             </div>
                         </div>
-
                         <div className="autokar-div">
                             <div className="prawo">
                                 <div className="dd1">
                                     <p className="btext">05.</p>
                                 </div>
-
                                 <div className="flex">
                                     <div className="d1">
                                         <p className="pnag">
@@ -283,7 +284,6 @@ function Flota() {
                                         <p className="textl">Norma emisji spalin: EURO VI</p>
                                         <p className="textl">Rok produkcji: 2017</p>
                                     </div>
-
                                     <div className="d1">
                                         <p className="pnag">​​🇴​​🇵​​🇮​​🇸​​</p>
                                         <p className="textl">
@@ -296,32 +296,35 @@ function Flota() {
                                         </p>
                                     </div>
                                 </div>
-
                                 <center>
                                     <div className="galeria">
                                         {getGaleria("VANHOOL").map((zdjecie, index) => (
                                             <img
                                                 key={index}
                                                 src={zdjecie}
-                                                alt={`Vanhool ${index + 1}`}
+                                                alt={`VANHOOL ${index + 1}`}
                                                 className="galimg"
-                                                onClick={() =>
+                                                onClick={() => {
                                                     setDuzeZdjecia(prev => ({
                                                         ...prev,
-                                                        VANHOOL: zdjecie
+                                                        TRANSIT: zdjecie
                                                     }))
-                                                }
+                                                    nav("/Galeria")
+                                                    setTimeout(() => {
+                                                        document
+                                                            .getElementById("galeria")
+                                                            ?.scrollIntoView({ behavior: "smooth" })
+                                                    }, 100)
+                                                }}
                                             />
                                         ))}
                                     </div>
                                 </center>
                             </div>
-
                             <div className="lewo">
                                 <img src={duzeZdjecia.VANHOOL} alt="Vanhool" />
                             </div>
                         </div>
-
                         <div className="zarezerwuj">
                             <p className="btext">
                                 ​🇸​​🇰​​🇴​​🇷​​🇿​​🇾​​🇸​​🇹​​🇦​​🇯​ ​🇿​ ​🇳​​🇦​​🇸​​🇿​​🇪​​🇯​ ​🇴​​🇫​​🇪​​🇷​​🇹​​🇾​
@@ -335,7 +338,6 @@ function Flota() {
                                     document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" })
                                 }, 100)}}>Kontakt</button>
                         </div>
-
                     </center>
                 </div>
             </center>
