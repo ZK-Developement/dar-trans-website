@@ -1258,7 +1258,7 @@ button a { color: white;}
 @media (max-width: 768px) {
     header {
       height: 5vh;
-      width: 85vw;
+      width: 85.5vw;
       border-radius: 3vh;
       justify-content: space-between;
       padding-left: 1vh;
@@ -1343,7 +1343,7 @@ button a { color: white;}
       padding-bottom: 1vh;
     }
     .footerh .lista{
-      width: 30vh;
+      width: 32vh;
     }
     footer{
       height: 85vh;
@@ -1403,5 +1403,72 @@ button a { color: white;}
         padding-left: 2vh;
         padding-right: 2vh;
     }
-   
+   .main-galeria{
+      width: 44vh;
+      margin-left: 2vh;
+      margin-right: 2vh;
+   }
+   .main-galeria .cnag {
+      font-size: 2.5vh;
+   }
+   .galeriamain{
+      grid-template-columns: repeat(2,1fr);
+      gap: 1.5vh;
+   }
+   .galeriamain img{
+    height: 20vh;
+   }
+   .main-polityka{
+      margin-left: 2vh;
+      margin-right: 2vh;
+      width: 44vh;
+   }
+   .main-polityka .top{
+      display: block;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 5vh;
+      width: 40vh;
+      height: 15vh;
+   }
+   .main-polityka .top img {
+      height: 10vh;
+      margin: 0;
+      transform: translateX(-6vh);
+   }
+   .main-polityka .top .cnag{
+      font-size: 2vh;
+      margin: 0;
+   }
+   .main-polityka .top .btext { display: none;}
+   .main-polityka .mid ul{
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      grid-template-rows: repeat(14, 1fr);
+   }
+   .navpolityka .btext { width: 30vh;}
+   .main-polityka .mid li{
+      transition: 100ms;
+      width: 30vh;
+      margin: 0;
+   }
+    .main-polityka .mid ul a{
+      width: 40vw;
+      margin: 0;
+   }
+    .main-polityka .mid li:hover{
+      text-decoration: underline;
+      color: #1a1a1aa8;
+   }
+ .main-polityka .mid .btext { display: block; margin-bottom: 0;}
+ .main-polityka .mid br { display: none;}
+
+
+
+
+
+
+
+
 }

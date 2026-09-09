@@ -40,13 +40,11 @@ function Galeria() {
     return (
         <>
             <br id="galeria" />
-
             <center>
                 <div className="main-galeria">
                     <p className="cnag">
                         Galeria - Przejrzyj zdjęcia zaszej floty oraz relacje z trasy
                     </p>
-
                     <div className="galeriamain">
                         {wszystkieZdjecia.map((zdjecie, index) => (
                             <img
@@ -57,24 +55,19 @@ function Galeria() {
                             />
                         ))}
                     </div>
-
                     <div className="zarezerwuj">
                         <p className="btext">
                             ​🇸​​🇰​​🇴​​🇷​​🇿​​🇾​​🇸​​🇹​​🇦​​🇯​ ​🇿​ ​🇳​​🇦​​🇸​​🇿​​🇪​​🇯​ ​🇴​​🇫​​🇪​​🇷​​🇹​​🇾​
                         </p>
-
                         <p className="cnag">
                             Zarezerwuj przejazd już dziś
                         </p>
-
                         <p className="text">
                             Zadzwoń i dowiedz się więcej informacji
                         </p>
-
                         <p className="text">
                             Tel.+48 604-190-948
                         </p>
-
                         <button onClick={() => {
                         nav("/Kontakt")
                         setTimeout(() => {
@@ -83,7 +76,6 @@ function Galeria() {
                     </div>
                 </div>
             </center>
-
             {otwarteZdjecie !== null && (
                 <div
                     className="lightbox"
@@ -95,7 +87,6 @@ function Galeria() {
                     >
                         ×
                     </button>
-
                     <button
                         className="lightbox-prev"
                         onClick={(e) => {
@@ -105,14 +96,12 @@ function Galeria() {
                     >
                         ❮
                     </button>
-
                     <img
                         src={wszystkieZdjecia[otwarteZdjecie]}
                         alt={`Zdjęcie ${otwarteZdjecie + 1}`}
                         className="lightbox-image"
                         onClick={(e) => e.stopPropagation()}
                     />
-
                     <button
                         className="lightbox-next"
                         onClick={(e) => {
