@@ -1461,8 +1461,47 @@ button a { color: white;}
       text-decoration: underline;
       color: #1a1a1aa8;
    }
- .main-polityka .mid .btext { display: block; margin-bottom: 0;}
- .main-polityka .mid br { display: none;}
+    .main-polityka .mid .btext { display: block; margin-bottom: 0;}
+    .main-polityka .mid br { display: none;}
+    .main-kontakt{
+      margin-left: 2vh;
+      margin-right: 2vh;
+      width: 44vh;
+      height: 120vh;
+    }
+    .kontakt-flex{
+    flex-direction: column-reverse;
+    padding: 2vh;
+    transform: translateY(20vh);
+    gap: 15vh;
+    }
+    .kontakt-flex .lewo {
+      height: 30vh;
+      width: 40vh;
+      padding: 0;
+      margin: 0;
+    }
+    .kontakt-flex .top h2{
+      width: 40vh ;
+      font-size: 3vh;
+    }
+    .kontakt-flex .mid p{
+      width: 40vh ;
+      font-size: 2vh;
+    }
+    .kontakt-flex .bottom {
+      width: 40vh;
+      background-color: blue;
+    }
+    .kontakt-flex .bottom a div{
+      width: 40vh ;
+      background-color: red;
+    }
+    .kontakt-flex .bottom a{
+      width: 40vh ;
+      background-color: rgb(17, 255, 0);
+    }
+
 
 
 
