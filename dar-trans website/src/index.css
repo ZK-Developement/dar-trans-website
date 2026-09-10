@@ -882,7 +882,7 @@ footer
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: auto;
   margin-bottom: 5vh;
 }
 .main-ofirmie .blok .obraz
@@ -909,7 +909,7 @@ footer
 {
   align-content: center;
   width: 70vh;
-  height: 50vh;
+  height: auto;
   text-align: left;
 }
 .treść .nag {font-size: 3vh; margin: 0;}
@@ -957,7 +957,7 @@ footer
 .blokopinie {
   display: flex;
   width: 100%;
-  height: 70vh;
+  height: auto;
   justify-content: center;
   align-items: center;
   gap: 12vh;
@@ -971,6 +971,10 @@ footer
 .blokopinie iframe{
   border-radius: 2vh;
   box-shadow: 0px 0px 2vh rgba(0, 0, 0, 0.151) ;
+  width: 65vh;
+  height: 45vh;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
 }
 .blokopinie .btext { font-size: 2vh;}
 .blokopinie .mid {font-size: 1.7vh;}
@@ -1505,23 +1509,27 @@ button a { color: white;}
     .main-ofirmie .idk img { height: 25vh; margin-top: 5vh;}
     
     .main-ofirmie .blok .obraz { display: none;}
-    .blok { width: 40vh; }
-    .blok .treść { width: 40vh; }
-    .blok .treść .nag { width: 40vh;}
-    .blok .treść .mid { width: 40vh;}
+    .blok { width: 40vh; height: auto; }
+    .blok .treść { width: 40vh; height: auto; padding-bottom: 7vh;}
+    .blok .treść .nag { width: 40vh; font-size: 2vh;}
+    .blok .treść .mid { width: 40vh; font-size: 1.5vh;}
 
     .blokopinie { height: 130vh;}
     .blokopinie .tresc { display: block;}
-    .blokopinie .naglow { transform: translateX(-1.5vh) translateY(-4vh); width: 26vh;}
-    .blokopinie .medale { transform: translateY(-30vh);}
+    .blokopinie .naglow { transform: translateX(-1.5vh) translateY(-4vh); color: #1a1a1a; width: 26vh;}
+    .blokopinie .medale { transform: translateY(-25vh);}
     .medal { 
       background-color: rgba(255, 255, 255, 0); 
       box-shadow: none;
-      height: 10vh;
+      height: 6vh;
+      
+    }
+    .medal img {
+      height: 14vh;
     }
 
     .blokopinie {
-      height: 75vh;
+      height: 60vh;
       gap: 0;
       background: 
       linear-gradient(
@@ -1539,7 +1547,7 @@ button a { color: white;}
     .opinie { width: 34vh; height: 21vh;}
     .opinie p { width: 34vh;}
     .opinie hr { width: 32vh;}
-    .blokopinie iframe { width: 40vh;}
+    .blokopinie iframe { width: 36vh; height: 40vh; margin: 0;}
     .opinie { box-shadow: 0px 0px 2vh rgba(0, 0, 0, 0.106);}
     .opinie:hover { box-shadow: 0px 0px 2vh rgba(0, 0, 0, 0.106);}
 
