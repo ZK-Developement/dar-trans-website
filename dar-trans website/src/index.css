@@ -908,7 +908,7 @@ footer
 .main-ofirmie .blok .treść
 {
   align-content: center;
-  width: 40%;
+  width: 70vh;
   height: 50vh;
   text-align: left;
 }
@@ -1491,20 +1491,57 @@ button a { color: white;}
     }
     .kontakt-flex .bottom {
       width: 40vh;
-      background-color: blue;
     }
-    .kontakt-flex .bottom a div{
-      width: 40vh ;
-      background-color: red;
+    .kontakt-flex .prawo .bottom div{
+      width: 38vh ;
     }
-    .kontakt-flex .bottom a{
-      width: 40vh ;
-      background-color: rgb(17, 255, 0);
+    .main-ofirmie{
+      margin-left: 2vh;
+      margin-right: 2vh;
+      width: 44vh;
+    }
+    .main-ofirmie .idk .pnag{ font-size: 2.5vh;}
+    .main-ofirmie .idk .mintestidk{ font-size: 1.5vh;}
+    .main-ofirmie .idk img { height: 25vh; margin-top: 5vh;}
+    
+    .main-ofirmie .blok .obraz { display: none;}
+    .blok { width: 40vh; }
+    .blok .treść { width: 40vh; }
+    .blok .treść .nag { width: 40vh;}
+    .blok .treść .mid { width: 40vh;}
+
+    .blokopinie { height: 130vh;}
+    .blokopinie .tresc { display: block;}
+    .blokopinie .naglow { transform: translateX(-1.5vh) translateY(-4vh); width: 26vh;}
+    .blokopinie .medale { transform: translateY(-30vh);}
+    .medal { 
+      background-color: rgba(255, 255, 255, 0); 
+      box-shadow: none;
+      height: 10vh;
     }
 
-
-
-
+    .blokopinie {
+      height: 75vh;
+      gap: 0;
+      background: 
+      linear-gradient(
+      rgb(254, 254, 254),
+      rgb(255, 255, 255)),
+      center center / cover no-repeat;
+      filter: grayscale(50%) ;
+      margin-bottom: 0;
+    }
+    .blokopinie {
+      flex-direction: column;
+      gap: 10vh;
+    }
+    .blokopinie .gora { width: 40vh;}
+    .opinie { width: 34vh; height: 21vh;}
+    .opinie p { width: 34vh;}
+    .opinie hr { width: 32vh;}
+    .blokopinie iframe { width: 40vh;}
+    .opinie { box-shadow: 0px 0px 2vh rgba(0, 0, 0, 0.106);}
+    .opinie:hover { box-shadow: 0px 0px 2vh rgba(0, 0, 0, 0.106);}
 
 
 
